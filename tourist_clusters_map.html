@@ -1,0 +1,3323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bfbecf89f6655bd71b75cd922fdf3f53 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bfbecf89f6655bd71b75cd922fdf3f53" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bfbecf89f6655bd71b75cd922fdf3f53 = L.map(
+                "map_bfbecf89f6655bd71b75cd922fdf3f53",
+                {
+                    center: [47.09567005, 13.398091525000002],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e3ef5d06944ec6d220ce7d167aa46454 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e3ef5d06944ec6d220ce7d167aa46454.addTo(map_bfbecf89f6655bd71b75cd922fdf3f53);
+        
+    
+            var marker_cluster_5edb2633ce36d73bf86e300af125dc3c = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_b8a9f117bd3261111b4e22365c4cbef3 = L.marker(
+                [41.902782, 12.496366],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_f9c8d8cbeb20f1b9eb8220822da92396 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b8a9f117bd3261111b4e22365c4cbef3.setIcon(icon_f9c8d8cbeb20f1b9eb8220822da92396);
+        
+    
+        var popup_8ca6917a31e6adfbdfba271600737edc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e30c5c1c00878ba6778cdc815fb959ad = $(`<div id="html_e30c5c1c00878ba6778cdc815fb959ad" style="width: 100.0%; height: 100.0%;">Rome<br>Tourists: 14.0 million<br>Category: City</div>`)[0];
+                popup_8ca6917a31e6adfbdfba271600737edc.setContent(html_e30c5c1c00878ba6778cdc815fb959ad);
+            
+        
+
+        marker_b8a9f117bd3261111b4e22365c4cbef3.bindPopup(popup_8ca6917a31e6adfbdfba271600737edc)
+        ;
+
+        
+    
+    
+            var marker_6d16605555682e23448e9521b430cfc4 = L.marker(
+                [43.769581, 11.255772],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_c37fd0ebebf3685b06afb1c5d205f232 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6d16605555682e23448e9521b430cfc4.setIcon(icon_c37fd0ebebf3685b06afb1c5d205f232);
+        
+    
+        var popup_5737fca1189ff721cc113f40789a371c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75811e32c446dd5ebf37b624efc47b5d = $(`<div id="html_75811e32c446dd5ebf37b624efc47b5d" style="width: 100.0%; height: 100.0%;">Florence<br>Tourists: 10.0 million<br>Category: City</div>`)[0];
+                popup_5737fca1189ff721cc113f40789a371c.setContent(html_75811e32c446dd5ebf37b624efc47b5d);
+            
+        
+
+        marker_6d16605555682e23448e9521b430cfc4.bindPopup(popup_5737fca1189ff721cc113f40789a371c)
+        ;
+
+        
+    
+    
+            var marker_3c7bb3ca0fff9fba295f30536e7ad18d = L.marker(
+                [45.435559, 12.336196],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_2ba7a60a9426edea63d2f701e64ebc00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c7bb3ca0fff9fba295f30536e7ad18d.setIcon(icon_2ba7a60a9426edea63d2f701e64ebc00);
+        
+    
+        var popup_4e52ab924d2daa525c2f33e9a19265b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_292d860a8836664ff4f11dea2d0713f2 = $(`<div id="html_292d860a8836664ff4f11dea2d0713f2" style="width: 100.0%; height: 100.0%;">Venice<br>Tourists: 10.0 million<br>Category: City</div>`)[0];
+                popup_4e52ab924d2daa525c2f33e9a19265b0.setContent(html_292d860a8836664ff4f11dea2d0713f2);
+            
+        
+
+        marker_3c7bb3ca0fff9fba295f30536e7ad18d.bindPopup(popup_4e52ab924d2daa525c2f33e9a19265b0)
+        ;
+
+        
+    
+    
+            var marker_8edd507a7792066e66d7fb90ff4b861f = L.marker(
+                [45.464643, 9.18854],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_71f2f4d06ff52d5e41a09b493ed70322 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8edd507a7792066e66d7fb90ff4b861f.setIcon(icon_71f2f4d06ff52d5e41a09b493ed70322);
+        
+    
+        var popup_373689f26c0092b651f3c94ff1cecd67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a75cd6191331744ba950ea8144a86ea1 = $(`<div id="html_a75cd6191331744ba950ea8144a86ea1" style="width: 100.0%; height: 100.0%;">Milan<br>Tourists: 7.0 million<br>Category: City</div>`)[0];
+                popup_373689f26c0092b651f3c94ff1cecd67.setContent(html_a75cd6191331744ba950ea8144a86ea1);
+            
+        
+
+        marker_8edd507a7792066e66d7fb90ff4b861f.bindPopup(popup_373689f26c0092b651f3c94ff1cecd67)
+        ;
+
+        
+    
+    
+            var marker_862426967467fb3daec425b664498d0e = L.marker(
+                [40.85133, 14.25472],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_9bad5c27f95deb88a30a786178eba91d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_862426967467fb3daec425b664498d0e.setIcon(icon_9bad5c27f95deb88a30a786178eba91d);
+        
+    
+        var popup_cbf6fd5b98dd8ea8dd96511f772bb495 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e9f22a18ac0e25c66447fea010ebc39 = $(`<div id="html_9e9f22a18ac0e25c66447fea010ebc39" style="width: 100.0%; height: 100.0%;">Naples<br>Tourists: 5.0 million<br>Category: City</div>`)[0];
+                popup_cbf6fd5b98dd8ea8dd96511f772bb495.setContent(html_9e9f22a18ac0e25c66447fea010ebc39);
+            
+        
+
+        marker_862426967467fb3daec425b664498d0e.bindPopup(popup_cbf6fd5b98dd8ea8dd96511f772bb495)
+        ;
+
+        
+    
+    
+            var marker_1720914f0071a6904271bce78bf330bc = L.marker(
+                [44.131811, 9.653342],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_041780356965155718172927767fd47b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1720914f0071a6904271bce78bf330bc.setIcon(icon_041780356965155718172927767fd47b);
+        
+    
+        var popup_1a036e68322774b4f74f613f8ac07881 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e888b067ae9cfa8d404b6f60fe80a067 = $(`<div id="html_e888b067ae9cfa8d404b6f60fe80a067" style="width: 100.0%; height: 100.0%;">Cinque Terre<br>Tourists: 3.0 million<br>Category: Coastal Town</div>`)[0];
+                popup_1a036e68322774b4f74f613f8ac07881.setContent(html_e888b067ae9cfa8d404b6f60fe80a067);
+            
+        
+
+        marker_1720914f0071a6904271bce78bf330bc.bindPopup(popup_1a036e68322774b4f74f613f8ac07881)
+        ;
+
+        
+    
+    
+            var marker_672e7a2e6ba0d4316b1a84eb2da0159b = L.marker(
+                [40.652843, 14.495831],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_494110ffc5e462aa462d652680e22a99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_672e7a2e6ba0d4316b1a84eb2da0159b.setIcon(icon_494110ffc5e462aa462d652680e22a99);
+        
+    
+        var popup_c29ac7b86798d6e19e47ba92938fe8c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f473d2310c48bec7ae61596bbd33f2e = $(`<div id="html_2f473d2310c48bec7ae61596bbd33f2e" style="width: 100.0%; height: 100.0%;">Amalfi Coast<br>Tourists: 2.0 million<br>Category: Coastal Region</div>`)[0];
+                popup_c29ac7b86798d6e19e47ba92938fe8c7.setContent(html_2f473d2310c48bec7ae61596bbd33f2e);
+            
+        
+
+        marker_672e7a2e6ba0d4316b1a84eb2da0159b.bindPopup(popup_c29ac7b86798d6e19e47ba92938fe8c7)
+        ;
+
+        
+    
+    
+            var marker_f8e5843b3ad0fd4f831bf1bee39f20c2 = L.marker(
+                [43.715899, 10.996557],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_9292d78ba0d275b70034f8c6ce834d99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f8e5843b3ad0fd4f831bf1bee39f20c2.setIcon(icon_9292d78ba0d275b70034f8c6ce834d99);
+        
+    
+        var popup_7c5699c46224ef0a9f1ba30e59d4253d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c046d51cfcd69ecc63b469740d9ccae9 = $(`<div id="html_c046d51cfcd69ecc63b469740d9ccae9" style="width: 100.0%; height: 100.0%;">Pisa<br>Tourists: 1.5 million<br>Category: City</div>`)[0];
+                popup_7c5699c46224ef0a9f1ba30e59d4253d.setContent(html_c046d51cfcd69ecc63b469740d9ccae9);
+            
+        
+
+        marker_f8e5843b3ad0fd4f831bf1bee39f20c2.bindPopup(popup_7c5699c46224ef0a9f1ba30e59d4253d)
+        ;
+
+        
+    
+    
+            var marker_0ec8827129327313bc0845ca425f8cd4 = L.marker(
+                [45.831894, 9.237083],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_31cca8dfda0908a5815b69830b8ba1f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0ec8827129327313bc0845ca425f8cd4.setIcon(icon_31cca8dfda0908a5815b69830b8ba1f0);
+        
+    
+        var popup_6a85fdf92506b2b7bfe9a79c098b371b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0c7825973d22c4589d27ac0397d0a24 = $(`<div id="html_f0c7825973d22c4589d27ac0397d0a24" style="width: 100.0%; height: 100.0%;">Lake Como<br>Tourists: 1.0 million<br>Category: Lake</div>`)[0];
+                popup_6a85fdf92506b2b7bfe9a79c098b371b.setContent(html_f0c7825973d22c4589d27ac0397d0a24);
+            
+        
+
+        marker_0ec8827129327313bc0845ca425f8cd4.bindPopup(popup_6a85fdf92506b2b7bfe9a79c098b371b)
+        ;
+
+        
+    
+    
+            var marker_4f635f7ad0fd4b0846bc5a67ec91bd52 = L.marker(
+                [45.439559, 10.996557],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_6d95deb592d4614d5b97565a36595320 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4f635f7ad0fd4b0846bc5a67ec91bd52.setIcon(icon_6d95deb592d4614d5b97565a36595320);
+        
+    
+        var popup_5c22ad2736076f317f257077911ff050 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9d45099905a5846f8e147a1fe3decc2 = $(`<div id="html_f9d45099905a5846f8e147a1fe3decc2" style="width: 100.0%; height: 100.0%;">Verona<br>Tourists: 1.0 million<br>Category: City</div>`)[0];
+                popup_5c22ad2736076f317f257077911ff050.setContent(html_f9d45099905a5846f8e147a1fe3decc2);
+            
+        
+
+        marker_4f635f7ad0fd4b0846bc5a67ec91bd52.bindPopup(popup_5c22ad2736076f317f257077911ff050)
+        ;
+
+        
+    
+    
+            var marker_3fe9af0329b3a09115c40a06c8649aad = L.marker(
+                [41.385064, 2.173135],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_138fc8f92e330f3f18738d9cbd8c3fa8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3fe9af0329b3a09115c40a06c8649aad.setIcon(icon_138fc8f92e330f3f18738d9cbd8c3fa8);
+        
+    
+        var popup_44998420b0f16e37eed28b22e95ff4e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_941b2a4a285c0ec32dae6a58c3813cdb = $(`<div id="html_941b2a4a285c0ec32dae6a58c3813cdb" style="width: 100.0%; height: 100.0%;">Barcelona<br>Tourists: 12.7 million<br>Category: City</div>`)[0];
+                popup_44998420b0f16e37eed28b22e95ff4e4.setContent(html_941b2a4a285c0ec32dae6a58c3813cdb);
+            
+        
+
+        marker_3fe9af0329b3a09115c40a06c8649aad.bindPopup(popup_44998420b0f16e37eed28b22e95ff4e4)
+        ;
+
+        
+    
+    
+            var marker_b73a2e6f2e56807d590d732877ede069 = L.marker(
+                [40.416775, -3.70379],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_3c8389acd4ff177fdb025a5d0ff49ae2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b73a2e6f2e56807d590d732877ede069.setIcon(icon_3c8389acd4ff177fdb025a5d0ff49ae2);
+        
+    
+        var popup_a2a96a795259dcc859aa79020e92749c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7629ab6266fa196fa75c6af3355c125e = $(`<div id="html_7629ab6266fa196fa75c6af3355c125e" style="width: 100.0%; height: 100.0%;">Madrid<br>Tourists: 7.0 million<br>Category: City</div>`)[0];
+                popup_a2a96a795259dcc859aa79020e92749c.setContent(html_7629ab6266fa196fa75c6af3355c125e);
+            
+        
+
+        marker_b73a2e6f2e56807d590d732877ede069.bindPopup(popup_a2a96a795259dcc859aa79020e92749c)
+        ;
+
+        
+    
+    
+            var marker_8ea0bba376ae3e6a2b9a3eb429cdf415 = L.marker(
+                [37.38908, -5.98398],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_6d24335fb9201b663a25827a34dba61d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8ea0bba376ae3e6a2b9a3eb429cdf415.setIcon(icon_6d24335fb9201b663a25827a34dba61d);
+        
+    
+        var popup_6736d5543719a3c0997e28f7e9cc91c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_300a551ef392c2a506f331ea8d5e0c77 = $(`<div id="html_300a551ef392c2a506f331ea8d5e0c77" style="width: 100.0%; height: 100.0%;">Seville<br>Tourists: 3.5 million<br>Category: City</div>`)[0];
+                popup_6736d5543719a3c0997e28f7e9cc91c8.setContent(html_300a551ef392c2a506f331ea8d5e0c77);
+            
+        
+
+        marker_8ea0bba376ae3e6a2b9a3eb429cdf415.bindPopup(popup_6736d5543719a3c0997e28f7e9cc91c8)
+        ;
+
+        
+    
+    
+            var marker_72ec1044f057868a91ff593279a64712 = L.marker(
+                [39.472925, -0.378464],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_c776427ddff66f8a1e717b9420d9567a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_72ec1044f057868a91ff593279a64712.setIcon(icon_c776427ddff66f8a1e717b9420d9567a);
+        
+    
+        var popup_112440748a113f6d625fb4d39761b644 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_684611204eb2d3bcc85482c0123a1e40 = $(`<div id="html_684611204eb2d3bcc85482c0123a1e40" style="width: 100.0%; height: 100.0%;">Valencia<br>Tourists: 2.5 million<br>Category: City</div>`)[0];
+                popup_112440748a113f6d625fb4d39761b644.setContent(html_684611204eb2d3bcc85482c0123a1e40);
+            
+        
+
+        marker_72ec1044f057868a91ff593279a64712.bindPopup(popup_112440748a113f6d625fb4d39761b644)
+        ;
+
+        
+    
+    
+            var marker_600c920ac319ce6f6f04e585abda87a5 = L.marker(
+                [37.187222, -3.60531],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_2e1cf0ce51639ca0b2c19bfb014efc09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_600c920ac319ce6f6f04e585abda87a5.setIcon(icon_2e1cf0ce51639ca0b2c19bfb014efc09);
+        
+    
+        var popup_82f51b28185f19dc05bad0495d304354 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e564c1ee08682d4488e04f416ff148b5 = $(`<div id="html_e564c1ee08682d4488e04f416ff148b5" style="width: 100.0%; height: 100.0%;">Granada<br>Tourists: 2.0 million<br>Category: City</div>`)[0];
+                popup_82f51b28185f19dc05bad0495d304354.setContent(html_e564c1ee08682d4488e04f416ff148b5);
+            
+        
+
+        marker_600c920ac319ce6f6f04e585abda87a5.bindPopup(popup_82f51b28185f19dc05bad0495d304354)
+        ;
+
+        
+    
+    
+            var marker_a4613089df8ac6c08389a1ec259e7250 = L.marker(
+                [36.720161, -4.421234],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_8749a5f1e26638b66c0006611428a44e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a4613089df8ac6c08389a1ec259e7250.setIcon(icon_8749a5f1e26638b66c0006611428a44e);
+        
+    
+        var popup_f15ab8ac1b973f010b164438700bd0b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8fecd1cdc25971e7829b52dfc17899b = $(`<div id="html_a8fecd1cdc25971e7829b52dfc17899b" style="width: 100.0%; height: 100.0%;">M laga<br>Tourists: 2.0 million<br>Category: City</div>`)[0];
+                popup_f15ab8ac1b973f010b164438700bd0b7.setContent(html_a8fecd1cdc25971e7829b52dfc17899b);
+            
+        
+
+        marker_a4613089df8ac6c08389a1ec259e7250.bindPopup(popup_f15ab8ac1b973f010b164438700bd0b7)
+        ;
+
+        
+    
+    
+            var marker_3a3a4fc513a8223fc81222afef3b810c = L.marker(
+                [43.257158, -2.936487],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_7d9b4e51761a517731e4164069faf715 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3a3a4fc513a8223fc81222afef3b810c.setIcon(icon_7d9b4e51761a517731e4164069faf715);
+        
+    
+        var popup_e137f3ae33917bb6151cd4a5bad36fd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_985cf505844db239363d2a770d4dc6d3 = $(`<div id="html_985cf505844db239363d2a770d4dc6d3" style="width: 100.0%; height: 100.0%;">Bilbao<br>Tourists: 1.5 million<br>Category: City</div>`)[0];
+                popup_e137f3ae33917bb6151cd4a5bad36fd0.setContent(html_985cf505844db239363d2a770d4dc6d3);
+            
+        
+
+        marker_3a3a4fc513a8223fc81222afef3b810c.bindPopup(popup_e137f3ae33917bb6151cd4a5bad36fd0)
+        ;
+
+        
+    
+    
+            var marker_39baba572cb7c1e7dfc2e9fcef5b874f = L.marker(
+                [38.901776, 1.433135],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_ea52b7fadf1cfc94c3a7de42f9235eea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_39baba572cb7c1e7dfc2e9fcef5b874f.setIcon(icon_ea52b7fadf1cfc94c3a7de42f9235eea);
+        
+    
+        var popup_79282cfac9727e2ff7c354183889ac28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_172c4a702916006fdfb2e6d7c70a1d24 = $(`<div id="html_172c4a702916006fdfb2e6d7c70a1d24" style="width: 100.0%; height: 100.0%;">Ibiza<br>Tourists: 8.0 million<br>Category: Island</div>`)[0];
+                popup_79282cfac9727e2ff7c354183889ac28.setContent(html_172c4a702916006fdfb2e6d7c70a1d24);
+            
+        
+
+        marker_39baba572cb7c1e7dfc2e9fcef5b874f.bindPopup(popup_79282cfac9727e2ff7c354183889ac28)
+        ;
+
+        
+    
+    
+            var marker_c8ea369bf5e5d3c91637a80938b1904b = L.marker(
+                [39.363371, 3.014272],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_68eca4d541ac32b8689f3301837ff4e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c8ea369bf5e5d3c91637a80938b1904b.setIcon(icon_68eca4d541ac32b8689f3301837ff4e1);
+        
+    
+        var popup_c91f10f357bc7b69703f0fa4c950a9b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b1272c90d632f6376f79268f7b10c67 = $(`<div id="html_2b1272c90d632f6376f79268f7b10c67" style="width: 100.0%; height: 100.0%;">Majorca<br>Tourists: 12.0 million<br>Category: Island</div>`)[0];
+                popup_c91f10f357bc7b69703f0fa4c950a9b9.setContent(html_2b1272c90d632f6376f79268f7b10c67);
+            
+        
+
+        marker_c8ea369bf5e5d3c91637a80938b1904b.bindPopup(popup_c91f10f357bc7b69703f0fa4c950a9b9)
+        ;
+
+        
+    
+    
+            var marker_a7e0838041d72fa4a609fc5e37fae05c = L.marker(
+                [43.317915, -1.959563],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_c8bd1e694f1d1d5d0c74f158e1403e6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a7e0838041d72fa4a609fc5e37fae05c.setIcon(icon_c8bd1e694f1d1d5d0c74f158e1403e6f);
+        
+    
+        var popup_8763362b7a17c8a4956af6d0713110c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ed0907a54ba5dd445c59084a7cb94b1 = $(`<div id="html_9ed0907a54ba5dd445c59084a7cb94b1" style="width: 100.0%; height: 100.0%;">San Sebasti n<br>Tourists: 1.0 million<br>Category: City</div>`)[0];
+                popup_8763362b7a17c8a4956af6d0713110c6.setContent(html_9ed0907a54ba5dd445c59084a7cb94b1);
+            
+        
+
+        marker_a7e0838041d72fa4a609fc5e37fae05c.bindPopup(popup_8763362b7a17c8a4956af6d0713110c6)
+        ;
+
+        
+    
+    
+            var marker_2393533e024e927c2660518b6628bf7f = L.marker(
+                [43.703761, 7.268731],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_ec915707548299cbf560a335e6ca8d1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2393533e024e927c2660518b6628bf7f.setIcon(icon_ec915707548299cbf560a335e6ca8d1a);
+        
+    
+        var popup_a8bc2ac6274cf2ba18130a604dad80eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7512e6f8eb0cff1ebd6eb267316adf9 = $(`<div id="html_c7512e6f8eb0cff1ebd6eb267316adf9" style="width: 100.0%; height: 100.0%;">Nice<br>Tourists: 4.0 million<br>Category: Coastal City</div>`)[0];
+                popup_a8bc2ac6274cf2ba18130a604dad80eb.setContent(html_c7512e6f8eb0cff1ebd6eb267316adf9);
+            
+        
+
+        marker_2393533e024e927c2660518b6628bf7f.bindPopup(popup_a8bc2ac6274cf2ba18130a604dad80eb)
+        ;
+
+        
+    
+    
+            var marker_3e1c3b7ec518218dff2303b65ab39600 = L.marker(
+                [43.296168, 5.370254],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_71f1ad9c67e5f39cbd4362c3152c267e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3e1c3b7ec518218dff2303b65ab39600.setIcon(icon_71f1ad9c67e5f39cbd4362c3152c267e);
+        
+    
+        var popup_8bda7795de89bc5d04caabbb5b61eef7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_094d628b8c8ac401f783c00bd845edf4 = $(`<div id="html_094d628b8c8ac401f783c00bd845edf4" style="width: 100.0%; height: 100.0%;">Marseille<br>Tourists: 3.5 million<br>Category: Coastal City</div>`)[0];
+                popup_8bda7795de89bc5d04caabbb5b61eef7.setContent(html_094d628b8c8ac401f783c00bd845edf4);
+            
+        
+
+        marker_3e1c3b7ec518218dff2303b65ab39600.bindPopup(popup_8bda7795de89bc5d04caabbb5b61eef7)
+        ;
+
+        
+    
+    
+            var marker_8c8f41fc3fa9e4443e1d321e3206c6fa = L.marker(
+                [45.764048, 4.835656],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_ecd4166e4d5bafa2f47d5c0d27892a07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8c8f41fc3fa9e4443e1d321e3206c6fa.setIcon(icon_ecd4166e4d5bafa2f47d5c0d27892a07);
+        
+    
+        var popup_06624885e080eb239b96245b406ad164 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b95904a7e50459efeefb6b26ae91114 = $(`<div id="html_7b95904a7e50459efeefb6b26ae91114" style="width: 100.0%; height: 100.0%;">Lyon<br>Tourists: 2.0 million<br>Category: City</div>`)[0];
+                popup_06624885e080eb239b96245b406ad164.setContent(html_7b95904a7e50459efeefb6b26ae91114);
+            
+        
+
+        marker_8c8f41fc3fa9e4443e1d321e3206c6fa.bindPopup(popup_06624885e080eb239b96245b406ad164)
+        ;
+
+        
+    
+    
+            var marker_57204259b6e44429d992130524483a26 = L.marker(
+                [44.837789, -0.57918],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_5eab8c9d9c79c26e259402d514a7cef0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_57204259b6e44429d992130524483a26.setIcon(icon_5eab8c9d9c79c26e259402d514a7cef0);
+        
+    
+        var popup_6f9c2e767955ac66cea90913696e12af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b9eb805897f98f4cc71b171b7cd1e87 = $(`<div id="html_1b9eb805897f98f4cc71b171b7cd1e87" style="width: 100.0%; height: 100.0%;">Bordeaux<br>Tourists: 1.5 million<br>Category: City</div>`)[0];
+                popup_6f9c2e767955ac66cea90913696e12af.setContent(html_1b9eb805897f98f4cc71b171b7cd1e87);
+            
+        
+
+        marker_57204259b6e44429d992130524483a26.bindPopup(popup_6f9c2e767955ac66cea90913696e12af)
+        ;
+
+        
+    
+    
+            var marker_2accdf051d72f9c2886c19416b0ab6c5 = L.marker(
+                [48.572935, 7.751936],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_030639ad155cd632f49851336fe076c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2accdf051d72f9c2886c19416b0ab6c5.setIcon(icon_030639ad155cd632f49851336fe076c9);
+        
+    
+        var popup_62ae8bb4142c5317525588bc23715d52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac9ec7b6b11a83663488de53d0e4046d = $(`<div id="html_ac9ec7b6b11a83663488de53d0e4046d" style="width: 100.0%; height: 100.0%;">Strasbourg<br>Tourists: 1.0 million<br>Category: City</div>`)[0];
+                popup_62ae8bb4142c5317525588bc23715d52.setContent(html_ac9ec7b6b11a83663488de53d0e4046d);
+            
+        
+
+        marker_2accdf051d72f9c2886c19416b0ab6c5.bindPopup(popup_62ae8bb4142c5317525588bc23715d52)
+        ;
+
+        
+    
+    
+            var marker_cae5f980bfcf75b917587b6349d851ba = L.marker(
+                [48.636111, -1.504444],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_b98f133a87d84328e4daaae16abe36b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cae5f980bfcf75b917587b6349d851ba.setIcon(icon_b98f133a87d84328e4daaae16abe36b0);
+        
+    
+        var popup_3dc7a99f0eec25f338314067c4774fe2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f090f35317fd22bbd5c30173e4b4c000 = $(`<div id="html_f090f35317fd22bbd5c30173e4b4c000" style="width: 100.0%; height: 100.0%;">Mont Saint-Michel<br>Tourists: 3.5 million<br>Category: Island</div>`)[0];
+                popup_3dc7a99f0eec25f338314067c4774fe2.setContent(html_f090f35317fd22bbd5c30173e4b4c000);
+            
+        
+
+        marker_cae5f980bfcf75b917587b6349d851ba.bindPopup(popup_3dc7a99f0eec25f338314067c4774fe2)
+        ;
+
+        
+    
+    
+            var marker_d426521773c1bcf726724fac89bb89b1 = L.marker(
+                [48.208171, 16.373869],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_2d1fc7d030f811da216aeaf56acad1c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d426521773c1bcf726724fac89bb89b1.setIcon(icon_2d1fc7d030f811da216aeaf56acad1c8);
+        
+    
+        var popup_18a9814d372685ddc7226b55b8629369 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96d8580fccee9d3ebc9c23daf12014d9 = $(`<div id="html_96d8580fccee9d3ebc9c23daf12014d9" style="width: 100.0%; height: 100.0%;">Vienna<br>Tourists: 7.5 million<br>Category: City</div>`)[0];
+                popup_18a9814d372685ddc7226b55b8629369.setContent(html_96d8580fccee9d3ebc9c23daf12014d9);
+            
+        
+
+        marker_d426521773c1bcf726724fac89bb89b1.bindPopup(popup_18a9814d372685ddc7226b55b8629369)
+        ;
+
+        
+    
+    
+            var marker_3e89ef08e999bf75d38f252ec79ff4e5 = L.marker(
+                [47.697994, 13.040555],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_e3ebf9642a23b06f8965696b7c2999d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3e89ef08e999bf75d38f252ec79ff4e5.setIcon(icon_e3ebf9642a23b06f8965696b7c2999d9);
+        
+    
+        var popup_c361a36f3b73417deaaf14efaea02068 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c126e94d07055082417bce48fb3abab8 = $(`<div id="html_c126e94d07055082417bce48fb3abab8" style="width: 100.0%; height: 100.0%;">Salzburg<br>Tourists: 3.0 million<br>Category: City</div>`)[0];
+                popup_c361a36f3b73417deaaf14efaea02068.setContent(html_c126e94d07055082417bce48fb3abab8);
+            
+        
+
+        marker_3e89ef08e999bf75d38f252ec79ff4e5.bindPopup(popup_c361a36f3b73417deaaf14efaea02068)
+        ;
+
+        
+    
+    
+            var marker_6bc6f8432368418dfe35111f46cd2626 = L.marker(
+                [47.269219, 11.397277],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_6d3ac65108b11116c1fe6de135bad3d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6bc6f8432368418dfe35111f46cd2626.setIcon(icon_6d3ac65108b11116c1fe6de135bad3d6);
+        
+    
+        var popup_a93c1c125a29edc0b336f226fc782e2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c38ef207fac7edb2d3f922afd474405 = $(`<div id="html_6c38ef207fac7edb2d3f922afd474405" style="width: 100.0%; height: 100.0%;">Innsbruck<br>Tourists: 2.0 million<br>Category: City</div>`)[0];
+                popup_a93c1c125a29edc0b336f226fc782e2b.setContent(html_6c38ef207fac7edb2d3f922afd474405);
+            
+        
+
+        marker_6bc6f8432368418dfe35111f46cd2626.bindPopup(popup_a93c1c125a29edc0b336f226fc782e2b)
+        ;
+
+        
+    
+    
+            var marker_0616be433eccac88ba594c8a8bf826c9 = L.marker(
+                [47.556733, 13.649528],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_8bf0b072c875d5adccf5106352d6b73d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0616be433eccac88ba594c8a8bf826c9.setIcon(icon_8bf0b072c875d5adccf5106352d6b73d);
+        
+    
+        var popup_15d8c84e813e560da788868ed0773ed3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0c9dc7e9cb9244445f275e093ef1087 = $(`<div id="html_c0c9dc7e9cb9244445f275e093ef1087" style="width: 100.0%; height: 100.0%;">Hallstatt<br>Tourists: 1.0 million<br>Category: Town</div>`)[0];
+                popup_15d8c84e813e560da788868ed0773ed3.setContent(html_c0c9dc7e9cb9244445f275e093ef1087);
+            
+        
+
+        marker_0616be433eccac88ba594c8a8bf826c9.bindPopup(popup_15d8c84e813e560da788868ed0773ed3)
+        ;
+
+        
+    
+    
+            var marker_7e30ede1f1ba966ff9cda3aa47d1cb68 = L.marker(
+                [47.070593, 15.438261],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_497c67c3e05a97a3c78a9f92147f4b32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7e30ede1f1ba966ff9cda3aa47d1cb68.setIcon(icon_497c67c3e05a97a3c78a9f92147f4b32);
+        
+    
+        var popup_2d38aa2fc84f6eb14b8819ef09be5e36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5955fd6cca676430979caa6082eb30b = $(`<div id="html_f5955fd6cca676430979caa6082eb30b" style="width: 100.0%; height: 100.0%;">Graz<br>Tourists: 1.0 million<br>Category: City</div>`)[0];
+                popup_2d38aa2fc84f6eb14b8819ef09be5e36.setContent(html_f5955fd6cca676430979caa6082eb30b);
+            
+        
+
+        marker_7e30ede1f1ba966ff9cda3aa47d1cb68.bindPopup(popup_2d38aa2fc84f6eb14b8819ef09be5e36)
+        ;
+
+        
+    
+    
+            var marker_d6faf92d1c6728c014b737f82a682fd3 = L.marker(
+                [48.174456, 16.220414],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_48dc7619931ddd9c425c49e4ac6f1f01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d6faf92d1c6728c014b737f82a682fd3.setIcon(icon_48dc7619931ddd9c425c49e4ac6f1f01);
+        
+    
+        var popup_aaca07cbd9b37f8862c5d88258a6cbd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af697a5a6d0260579c5331fe54650456 = $(`<div id="html_af697a5a6d0260579c5331fe54650456" style="width: 100.0%; height: 100.0%;">Vienna Woods<br>Tourists: 2.0 million<br>Category: Forest</div>`)[0];
+                popup_aaca07cbd9b37f8862c5d88258a6cbd2.setContent(html_af697a5a6d0260579c5331fe54650456);
+            
+        
+
+        marker_d6faf92d1c6728c014b737f82a682fd3.bindPopup(popup_aaca07cbd9b37f8862c5d88258a6cbd2)
+        ;
+
+        
+    
+    
+            var marker_ede088f685f72ae77f5f826bdfa0e60e = L.marker(
+                [50.850441, 4.356949],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_59790b60b8e05b16e18bc5170f6e14ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ede088f685f72ae77f5f826bdfa0e60e.setIcon(icon_59790b60b8e05b16e18bc5170f6e14ea);
+        
+    
+        var popup_dadb889caa3bd3bb22298cf916ce5c9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cc28810578aa135b547f0596660f863 = $(`<div id="html_5cc28810578aa135b547f0596660f863" style="width: 100.0%; height: 100.0%;">Brussels<br>Tourists: 10.0 million<br>Category: City</div>`)[0];
+                popup_dadb889caa3bd3bb22298cf916ce5c9d.setContent(html_5cc28810578aa135b547f0596660f863);
+            
+        
+
+        marker_ede088f685f72ae77f5f826bdfa0e60e.bindPopup(popup_dadb889caa3bd3bb22298cf916ce5c9d)
+        ;
+
+        
+    
+    
+            var marker_5e79a75c36061390d315e694c05910b0 = L.marker(
+                [51.205937, 3.210851],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_da255cf1510e40e9db0475130d1a648f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5e79a75c36061390d315e694c05910b0.setIcon(icon_da255cf1510e40e9db0475130d1a648f);
+        
+    
+        var popup_a3901c0da9a2c9bb0d6e9dc138e1726b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef249b28914c3f375d977f8214afd998 = $(`<div id="html_ef249b28914c3f375d977f8214afd998" style="width: 100.0%; height: 100.0%;">Bruges<br>Tourists: 8.0 million<br>Category: City</div>`)[0];
+                popup_a3901c0da9a2c9bb0d6e9dc138e1726b.setContent(html_ef249b28914c3f375d977f8214afd998);
+            
+        
+
+        marker_5e79a75c36061390d315e694c05910b0.bindPopup(popup_a3901c0da9a2c9bb0d6e9dc138e1726b)
+        ;
+
+        
+    
+    
+            var marker_11ded02cdd5b71bcf804a7fd8c35bf40 = L.marker(
+                [51.057089, 3.715678],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_8b58961f611116e0a5ea93d74234cbe4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_11ded02cdd5b71bcf804a7fd8c35bf40.setIcon(icon_8b58961f611116e0a5ea93d74234cbe4);
+        
+    
+        var popup_7c386ef06b238999e765e42617bf3d2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3171fc0671c4ab6caeef75f523a6c45 = $(`<div id="html_d3171fc0671c4ab6caeef75f523a6c45" style="width: 100.0%; height: 100.0%;">Ghent<br>Tourists: 5.0 million<br>Category: City</div>`)[0];
+                popup_7c386ef06b238999e765e42617bf3d2c.setContent(html_d3171fc0671c4ab6caeef75f523a6c45);
+            
+        
+
+        marker_11ded02cdd5b71bcf804a7fd8c35bf40.bindPopup(popup_7c386ef06b238999e765e42617bf3d2c)
+        ;
+
+        
+    
+    
+            var marker_222adfb1a205009bcf419ef93a911ec6 = L.marker(
+                [51.223581, 4.415875],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_6d50ebe6a7d912c937603c17d60780dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_222adfb1a205009bcf419ef93a911ec6.setIcon(icon_6d50ebe6a7d912c937603c17d60780dd);
+        
+    
+        var popup_d3b5d9eaa924a59eea3630a66e709928 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9bacd601cae8d6692a5280298d793962 = $(`<div id="html_9bacd601cae8d6692a5280298d793962" style="width: 100.0%; height: 100.0%;">Antwerp<br>Tourists: 4.0 million<br>Category: City</div>`)[0];
+                popup_d3b5d9eaa924a59eea3630a66e709928.setContent(html_9bacd601cae8d6692a5280298d793962);
+            
+        
+
+        marker_222adfb1a205009bcf419ef93a911ec6.bindPopup(popup_d3b5d9eaa924a59eea3630a66e709928)
+        ;
+
+        
+    
+    
+            var marker_d849f4b890cd398bde69c66ca86f9dea = L.marker(
+                [50.872166, 4.686716],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_88263d1fe994214290e66368db0ba929 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d849f4b890cd398bde69c66ca86f9dea.setIcon(icon_88263d1fe994214290e66368db0ba929);
+        
+    
+        var popup_4c925fa1dee39eee88bcc1b81b93bd25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5119f3ee59e4e224aca65e910b7d30b8 = $(`<div id="html_5119f3ee59e4e224aca65e910b7d30b8" style="width: 100.0%; height: 100.0%;">Leuven<br>Tourists: 2.0 million<br>Category: City</div>`)[0];
+                popup_4c925fa1dee39eee88bcc1b81b93bd25.setContent(html_5119f3ee59e4e224aca65e910b7d30b8);
+            
+        
+
+        marker_d849f4b890cd398bde69c66ca86f9dea.bindPopup(popup_4c925fa1dee39eee88bcc1b81b93bd25)
+        ;
+
+        
+    
+    
+            var marker_648983f00b08c239264216cd00856bf9 = L.marker(
+                [50.275573, 5.024897],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_950f55f78840e02ecfb2f67e782bd1f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_648983f00b08c239264216cd00856bf9.setIcon(icon_950f55f78840e02ecfb2f67e782bd1f7);
+        
+    
+        var popup_3dcbdd213b3163e1ecb8f273212140d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17c5b47a7da4667761e8bad43787b574 = $(`<div id="html_17c5b47a7da4667761e8bad43787b574" style="width: 100.0%; height: 100.0%;">Dinant<br>Tourists: 1.0 million<br>Category: Town</div>`)[0];
+                popup_3dcbdd213b3163e1ecb8f273212140d4.setContent(html_17c5b47a7da4667761e8bad43787b574);
+            
+        
+
+        marker_648983f00b08c239264216cd00856bf9.bindPopup(popup_3dcbdd213b3163e1ecb8f273212140d4)
+        ;
+
+        
+    
+    
+            var marker_5f32bfd546bd5a49f7015194f5103bfc = L.marker(
+                [55.676098, 12.568337],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_7f5024dc2b790aa678304bbf89eed794 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5f32bfd546bd5a49f7015194f5103bfc.setIcon(icon_7f5024dc2b790aa678304bbf89eed794);
+        
+    
+        var popup_e618f6119e457efbabe512f70f03f424 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e15c26a7ecc99c315a5235cc65f65d3 = $(`<div id="html_4e15c26a7ecc99c315a5235cc65f65d3" style="width: 100.0%; height: 100.0%;">Copenhagen<br>Tourists: 10.0 million<br>Category: City</div>`)[0];
+                popup_e618f6119e457efbabe512f70f03f424.setContent(html_4e15c26a7ecc99c315a5235cc65f65d3);
+            
+        
+
+        marker_5f32bfd546bd5a49f7015194f5103bfc.bindPopup(popup_e618f6119e457efbabe512f70f03f424)
+        ;
+
+        
+    
+    
+            var marker_dfffa95de73c99216b228fa7398180b1 = L.marker(
+                [56.150947, 10.217696],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_6a8751a709b4598f5c5c732f97c595ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dfffa95de73c99216b228fa7398180b1.setIcon(icon_6a8751a709b4598f5c5c732f97c595ef);
+        
+    
+        var popup_d0e30ba1c1a94c6e053df1c776c5d8aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3baafe653b3e7d9cabfcb50c45d4b321 = $(`<div id="html_3baafe653b3e7d9cabfcb50c45d4b321" style="width: 100.0%; height: 100.0%;">Aarhus<br>Tourists: 2.5 million<br>Category: City</div>`)[0];
+                popup_d0e30ba1c1a94c6e053df1c776c5d8aa.setContent(html_3baafe653b3e7d9cabfcb50c45d4b321);
+            
+        
+
+        marker_dfffa95de73c99216b228fa7398180b1.bindPopup(popup_d0e30ba1c1a94c6e053df1c776c5d8aa)
+        ;
+
+        
+    
+    
+            var marker_e0767a20cf0d072e8df81c7971311d8c = L.marker(
+                [55.397081, 10.395973],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_fefdfe18d3ec5a4b15ecf4844080910c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e0767a20cf0d072e8df81c7971311d8c.setIcon(icon_fefdfe18d3ec5a4b15ecf4844080910c);
+        
+    
+        var popup_00de292bb0eec9260f99d7ed0afb2aee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96b1d8de4501d1214bf8c71c81ae27e2 = $(`<div id="html_96b1d8de4501d1214bf8c71c81ae27e2" style="width: 100.0%; height: 100.0%;">Odense<br>Tourists: 1.5 million<br>Category: City</div>`)[0];
+                popup_00de292bb0eec9260f99d7ed0afb2aee.setContent(html_96b1d8de4501d1214bf8c71c81ae27e2);
+            
+        
+
+        marker_e0767a20cf0d072e8df81c7971311d8c.bindPopup(popup_00de292bb0eec9260f99d7ed0afb2aee)
+        ;
+
+        
+    
+    
+            var marker_fddc274eaab5ace9c2fdc883299aa492 = L.marker(
+                [55.709974, 9.461622],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_82c2401bdf38e970769abbfdddac3257 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fddc274eaab5ace9c2fdc883299aa492.setIcon(icon_82c2401bdf38e970769abbfdddac3257);
+        
+    
+        var popup_26f358d81de5e5fef7b3709e2985bbd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f67039262a2b4c56f4bff1b455f30ecd = $(`<div id="html_f67039262a2b4c56f4bff1b455f30ecd" style="width: 100.0%; height: 100.0%;">Legoland Billund<br>Tourists: 2.5 million<br>Category: Theme Park</div>`)[0];
+                popup_26f358d81de5e5fef7b3709e2985bbd5.setContent(html_f67039262a2b4c56f4bff1b455f30ecd);
+            
+        
+
+        marker_fddc274eaab5ace9c2fdc883299aa492.bindPopup(popup_26f358d81de5e5fef7b3709e2985bbd5)
+        ;
+
+        
+    
+    
+            var marker_09f545954db5b55ee7ba85daf10b067b = L.marker(
+                [55.683798, 12.572936],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_7128850633c7af48c7b0b22e071d785a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_09f545954db5b55ee7ba85daf10b067b.setIcon(icon_7128850633c7af48c7b0b22e071d785a);
+        
+    
+        var popup_0df9df6002ad95e0662121e1739769cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_648a56afaa4e9211180a4c2b38fe2da6 = $(`<div id="html_648a56afaa4e9211180a4c2b38fe2da6" style="width: 100.0%; height: 100.0%;">Tivoli Gardens<br>Tourists: 4.0 million<br>Category: Amusement Park</div>`)[0];
+                popup_0df9df6002ad95e0662121e1739769cd.setContent(html_648a56afaa4e9211180a4c2b38fe2da6);
+            
+        
+
+        marker_09f545954db5b55ee7ba85daf10b067b.bindPopup(popup_0df9df6002ad95e0662121e1739769cd)
+        ;
+
+        
+    
+    
+            var marker_d6511b9473017fce15cf8c9c13f9871e = L.marker(
+                [52.520008, 13.404954],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_af8702b7dacc5a0a3e1782abebc69abc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d6511b9473017fce15cf8c9c13f9871e.setIcon(icon_af8702b7dacc5a0a3e1782abebc69abc);
+        
+    
+        var popup_a64383205d0f03d7dca0f893a2190e78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e0cc9daacd5440c5e643333a4a7ead1 = $(`<div id="html_6e0cc9daacd5440c5e643333a4a7ead1" style="width: 100.0%; height: 100.0%;">Berlin<br>Tourists: 13.5 million<br>Category: City</div>`)[0];
+                popup_a64383205d0f03d7dca0f893a2190e78.setContent(html_6e0cc9daacd5440c5e643333a4a7ead1);
+            
+        
+
+        marker_d6511b9473017fce15cf8c9c13f9871e.bindPopup(popup_a64383205d0f03d7dca0f893a2190e78)
+        ;
+
+        
+    
+    
+            var marker_e2f3d79a2e3a249009fca126d323865c = L.marker(
+                [48.137152, 11.576123],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_eb04d202974049e83aa2adf08e33b2f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e2f3d79a2e3a249009fca126d323865c.setIcon(icon_eb04d202974049e83aa2adf08e33b2f0);
+        
+    
+        var popup_a061c6ddf9f68effac7b1433c27bc7ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01ab492213037377be1a5f24e169f639 = $(`<div id="html_01ab492213037377be1a5f24e169f639" style="width: 100.0%; height: 100.0%;">Munich<br>Tourists: 10.0 million<br>Category: City</div>`)[0];
+                popup_a061c6ddf9f68effac7b1433c27bc7ab.setContent(html_01ab492213037377be1a5f24e169f639);
+            
+        
+
+        marker_e2f3d79a2e3a249009fca126d323865c.bindPopup(popup_a061c6ddf9f68effac7b1433c27bc7ab)
+        ;
+
+        
+    
+    
+            var marker_ef7939987324a8789e03e55568608289 = L.marker(
+                [50.110922, 8.682127],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_24ddc90860e089eb4ab02cd7d91a1f05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ef7939987324a8789e03e55568608289.setIcon(icon_24ddc90860e089eb4ab02cd7d91a1f05);
+        
+    
+        var popup_5e53da44f3b5b9c2585a7e5e48e3728f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9f6d5abf5d41a9d2bc394c2b83376f4 = $(`<div id="html_c9f6d5abf5d41a9d2bc394c2b83376f4" style="width: 100.0%; height: 100.0%;">Frankfurt<br>Tourists: 7.0 million<br>Category: City</div>`)[0];
+                popup_5e53da44f3b5b9c2585a7e5e48e3728f.setContent(html_c9f6d5abf5d41a9d2bc394c2b83376f4);
+            
+        
+
+        marker_ef7939987324a8789e03e55568608289.bindPopup(popup_5e53da44f3b5b9c2585a7e5e48e3728f)
+        ;
+
+        
+    
+    
+            var marker_4f8e28400931bbb24521ddef8b5f8829 = L.marker(
+                [50.936662, 6.959955],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_f6bca831d0e423f225a0fe57aa6b2ac6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4f8e28400931bbb24521ddef8b5f8829.setIcon(icon_f6bca831d0e423f225a0fe57aa6b2ac6);
+        
+    
+        var popup_5e1fac20f972ac365bde7b94be9fc4c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfa8c236232a153bcac260af50ddfa1d = $(`<div id="html_bfa8c236232a153bcac260af50ddfa1d" style="width: 100.0%; height: 100.0%;">Cologne<br>Tourists: 5.0 million<br>Category: City</div>`)[0];
+                popup_5e1fac20f972ac365bde7b94be9fc4c5.setContent(html_bfa8c236232a153bcac260af50ddfa1d);
+            
+        
+
+        marker_4f8e28400931bbb24521ddef8b5f8829.bindPopup(popup_5e1fac20f972ac365bde7b94be9fc4c5)
+        ;
+
+        
+    
+    
+            var marker_6f223134391506f503119a48eb1ccfe8 = L.marker(
+                [53.550278, 9.993681],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_f3c15ff54908498ea7d8348383402d71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6f223134391506f503119a48eb1ccfe8.setIcon(icon_f3c15ff54908498ea7d8348383402d71);
+        
+    
+        var popup_421e35c844e9e2d4edd26dbdd105d4f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f69a1ed276bd776e25d21f749cb1d563 = $(`<div id="html_f69a1ed276bd776e25d21f749cb1d563" style="width: 100.0%; height: 100.0%;">Hamburg<br>Tourists: 5.0 million<br>Category: City</div>`)[0];
+                popup_421e35c844e9e2d4edd26dbdd105d4f7.setContent(html_f69a1ed276bd776e25d21f749cb1d563);
+            
+        
+
+        marker_6f223134391506f503119a48eb1ccfe8.bindPopup(popup_421e35c844e9e2d4edd26dbdd105d4f7)
+        ;
+
+        
+    
+    
+            var marker_06dbdcbce8034b20c585f61c659688b6 = L.marker(
+                [51.051005, 13.737234],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_adb4279637f70c18c6d9e8208b8e5bd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_06dbdcbce8034b20c585f61c659688b6.setIcon(icon_adb4279637f70c18c6d9e8208b8e5bd3);
+        
+    
+        var popup_0c77f4c48c979bba2a88fb9d5056921e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74c5e934430123c8e1f51397b47e29c3 = $(`<div id="html_74c5e934430123c8e1f51397b47e29c3" style="width: 100.0%; height: 100.0%;">Dresden<br>Tourists: 3.0 million<br>Category: City</div>`)[0];
+                popup_0c77f4c48c979bba2a88fb9d5056921e.setContent(html_74c5e934430123c8e1f51397b47e29c3);
+            
+        
+
+        marker_06dbdcbce8034b20c585f61c659688b6.bindPopup(popup_0c77f4c48c979bba2a88fb9d5056921e)
+        ;
+
+        
+    
+    
+            var marker_b4dd28b619e038a4451ce89d88b50ac8 = L.marker(
+                [49.405154, 8.691038],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_1d7477a0b82592c1a9589cffeb7e0121 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b4dd28b619e038a4451ce89d88b50ac8.setIcon(icon_1d7477a0b82592c1a9589cffeb7e0121);
+        
+    
+        var popup_0d31b9b84f063ed745218354d3f24661 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9045f6f4c133e7739419df242f473ae = $(`<div id="html_a9045f6f4c133e7739419df242f473ae" style="width: 100.0%; height: 100.0%;">Heidelberg<br>Tourists: 2.0 million<br>Category: City</div>`)[0];
+                popup_0d31b9b84f063ed745218354d3f24661.setContent(html_a9045f6f4c133e7739419df242f473ae);
+            
+        
+
+        marker_b4dd28b619e038a4451ce89d88b50ac8.bindPopup(popup_0d31b9b84f063ed745218354d3f24661)
+        ;
+
+        
+    
+    
+            var marker_d1ea9b1b7f3af8383f55eee793bbdb1b = L.marker(
+                [49.443589, 10.090444],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_51992dfa62c65218a87276119f3cb21a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d1ea9b1b7f3af8383f55eee793bbdb1b.setIcon(icon_51992dfa62c65218a87276119f3cb21a);
+        
+    
+        var popup_8b3722b0511bbaeac80ec8a905698074 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7aa2135c0b4b2e8785af1e6205f7a72f = $(`<div id="html_7aa2135c0b4b2e8785af1e6205f7a72f" style="width: 100.0%; height: 100.0%;">Rothenburg ob der Tauber<br>Tourists: 1.0 million<br>Category: Town</div>`)[0];
+                popup_8b3722b0511bbaeac80ec8a905698074.setContent(html_7aa2135c0b4b2e8785af1e6205f7a72f);
+            
+        
+
+        marker_d1ea9b1b7f3af8383f55eee793bbdb1b.bindPopup(popup_8b3722b0511bbaeac80ec8a905698074)
+        ;
+
+        
+    
+    
+            var marker_55c99aab7c581707f603059a324e38c6 = L.marker(
+                [47.557778, 10.748611],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_27a899ea923407f80e677bd34cec8794 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_55c99aab7c581707f603059a324e38c6.setIcon(icon_27a899ea923407f80e677bd34cec8794);
+        
+    
+        var popup_fb6eebbf31ab88bc148728ac2368a331 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5f3453849a801b482eaeed757d504f7 = $(`<div id="html_c5f3453849a801b482eaeed757d504f7" style="width: 100.0%; height: 100.0%;">Neuschwanstein Castle<br>Tourists: 1.5 million<br>Category: Castle</div>`)[0];
+                popup_fb6eebbf31ab88bc148728ac2368a331.setContent(html_c5f3453849a801b482eaeed757d504f7);
+            
+        
+
+        marker_55c99aab7c581707f603059a324e38c6.bindPopup(popup_fb6eebbf31ab88bc148728ac2368a331)
+        ;
+
+        
+    
+    
+            var marker_196dc0de29615e0d7d59101ce4851c39 = L.marker(
+                [48.180233, 8.322533],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_95a47c515f6093178b349be8aae307bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_196dc0de29615e0d7d59101ce4851c39.setIcon(icon_95a47c515f6093178b349be8aae307bb);
+        
+    
+        var popup_35c527182f3b622896ebd09c6c218076 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8571c0d110453b982b4b5c80225da2f = $(`<div id="html_b8571c0d110453b982b4b5c80225da2f" style="width: 100.0%; height: 100.0%;">Black Forest<br>Tourists: 5.0 million<br>Category: Region</div>`)[0];
+                popup_35c527182f3b622896ebd09c6c218076.setContent(html_b8571c0d110453b982b4b5c80225da2f);
+            
+        
+
+        marker_196dc0de29615e0d7d59101ce4851c39.bindPopup(popup_35c527182f3b622896ebd09c6c218076)
+        ;
+
+        
+    
+    
+            var marker_71efec85bb472dbcf0e2059442e09c57 = L.marker(
+                [45.437078, 7.426435],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_d40246b6c24717852813e0f95c03c1af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_71efec85bb472dbcf0e2059442e09c57.setIcon(icon_d40246b6c24717852813e0f95c03c1af);
+        
+    
+        var popup_03ed05333a4bdd6fdad8f2b786756b02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_718a7a064038cb111a1fc92543435ce7 = $(`<div id="html_718a7a064038cb111a1fc92543435ce7" style="width: 100.0%; height: 100.0%;">Monaco-Ville<br>Tourists: 3.0 million<br>Category: City</div>`)[0];
+                popup_03ed05333a4bdd6fdad8f2b786756b02.setContent(html_718a7a064038cb111a1fc92543435ce7);
+            
+        
+
+        marker_71efec85bb472dbcf0e2059442e09c57.bindPopup(popup_03ed05333a4bdd6fdad8f2b786756b02)
+        ;
+
+        
+    
+    
+            var marker_72643d767ee5cc1e3edcfa71b37299c8 = L.marker(
+                [45.437078, 7.426435],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_dacf09cb6a951507028b3e8ecc72bfc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_72643d767ee5cc1e3edcfa71b37299c8.setIcon(icon_dacf09cb6a951507028b3e8ecc72bfc1);
+        
+    
+        var popup_62cbe7263323947ce023a144dbc8a1e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08d2c5842fd4bb3d58a2427098ff48ec = $(`<div id="html_08d2c5842fd4bb3d58a2427098ff48ec" style="width: 100.0%; height: 100.0%;">Monte Carlo<br>Tourists: 3.0 million<br>Category: District</div>`)[0];
+                popup_62cbe7263323947ce023a144dbc8a1e2.setContent(html_08d2c5842fd4bb3d58a2427098ff48ec);
+            
+        
+
+        marker_72643d767ee5cc1e3edcfa71b37299c8.bindPopup(popup_62cbe7263323947ce023a144dbc8a1e2)
+        ;
+
+        
+    
+    
+            var marker_d4fcff914c97fa9115d90afa48a1a212 = L.marker(
+                [45.437078, 7.426435],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_60aded46307862c336e51120f20e02ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d4fcff914c97fa9115d90afa48a1a212.setIcon(icon_60aded46307862c336e51120f20e02ac);
+        
+    
+        var popup_812e50527fe86c8e1884df75ce0a7512 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc8c77e77f8a6a3758c02449ddd2efdc = $(`<div id="html_dc8c77e77f8a6a3758c02449ddd2efdc" style="width: 100.0%; height: 100.0%;">Casino Square<br>Tourists: 2.0 million<br>Category: Square</div>`)[0];
+                popup_812e50527fe86c8e1884df75ce0a7512.setContent(html_dc8c77e77f8a6a3758c02449ddd2efdc);
+            
+        
+
+        marker_d4fcff914c97fa9115d90afa48a1a212.bindPopup(popup_812e50527fe86c8e1884df75ce0a7512)
+        ;
+
+        
+    
+    
+            var marker_7b865e19a66a4e50bb8fd74f39030d4b = L.marker(
+                [45.437078, 7.426435],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_5d36823fe7a1559905f29b87c9de3bae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7b865e19a66a4e50bb8fd74f39030d4b.setIcon(icon_5d36823fe7a1559905f29b87c9de3bae);
+        
+    
+        var popup_3063f9205b3f254b76959d7e66db4f01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f7421d63f096937519d88cc5b6a6fad = $(`<div id="html_8f7421d63f096937519d88cc5b6a6fad" style="width: 100.0%; height: 100.0%;">Oceanographic Museum<br>Tourists: 1.0 million<br>Category: Museum</div>`)[0];
+                popup_3063f9205b3f254b76959d7e66db4f01.setContent(html_8f7421d63f096937519d88cc5b6a6fad);
+            
+        
+
+        marker_7b865e19a66a4e50bb8fd74f39030d4b.bindPopup(popup_3063f9205b3f254b76959d7e66db4f01)
+        ;
+
+        
+    
+    
+            var marker_e3541e24af768cae48d60813a8367494 = L.marker(
+                [55.755796, 37.617315],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_4466d572b943ee6a4f1d7d17d4acd0c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e3541e24af768cae48d60813a8367494.setIcon(icon_4466d572b943ee6a4f1d7d17d4acd0c3);
+        
+    
+        var popup_98a4b7a449567a90fc034ba4c78fdcb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05560854656e8ecfc397a5a8f1ef8b8e = $(`<div id="html_05560854656e8ecfc397a5a8f1ef8b8e" style="width: 100.0%; height: 100.0%;">Moscow<br>Tourists: 12.5 million<br>Category: City</div>`)[0];
+                popup_98a4b7a449567a90fc034ba4c78fdcb1.setContent(html_05560854656e8ecfc397a5a8f1ef8b8e);
+            
+        
+
+        marker_e3541e24af768cae48d60813a8367494.bindPopup(popup_98a4b7a449567a90fc034ba4c78fdcb1)
+        ;
+
+        
+    
+    
+            var marker_887cf80416aa94c2db0259c22e3ad9f0 = L.marker(
+                [59.934083, 30.335285],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_5eeb72478a7f5ab7ba09e946be44f56c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_887cf80416aa94c2db0259c22e3ad9f0.setIcon(icon_5eeb72478a7f5ab7ba09e946be44f56c);
+        
+    
+        var popup_e53cad82f1f858af5bd4bd4375b598da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99a82c5d2a0b405701f2705f9c7ef1f6 = $(`<div id="html_99a82c5d2a0b405701f2705f9c7ef1f6" style="width: 100.0%; height: 100.0%;">St. Petersburg<br>Tourists: 8.0 million<br>Category: City</div>`)[0];
+                popup_e53cad82f1f858af5bd4bd4375b598da.setContent(html_99a82c5d2a0b405701f2705f9c7ef1f6);
+            
+        
+
+        marker_887cf80416aa94c2db0259c22e3ad9f0.bindPopup(popup_e53cad82f1f858af5bd4bd4375b598da)
+        ;
+
+        
+    
+    
+            var marker_216f1c4fdadebb48e7ef9db4ff206bee = L.marker(
+                [43.565133, 39.60304],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_c0b14a16fb1745ae85d64350da991b3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_216f1c4fdadebb48e7ef9db4ff206bee.setIcon(icon_c0b14a16fb1745ae85d64350da991b3d);
+        
+    
+        var popup_4f9bde4d3b9c94b115ebf3becf566f47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_edfe012340f96073a50a2214457bd699 = $(`<div id="html_edfe012340f96073a50a2214457bd699" style="width: 100.0%; height: 100.0%;">Sochi<br>Tourists: 3.0 million<br>Category: City</div>`)[0];
+                popup_4f9bde4d3b9c94b115ebf3becf566f47.setContent(html_edfe012340f96073a50a2214457bd699);
+            
+        
+
+        marker_216f1c4fdadebb48e7ef9db4ff206bee.bindPopup(popup_4f9bde4d3b9c94b115ebf3becf566f47)
+        ;
+
+        
+    
+    
+            var marker_5e347c539fed0c47929529f3245c16aa = L.marker(
+                [55.794722, 49.111389],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_e0d81fe5de65e13563de9c885d9cbaef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5e347c539fed0c47929529f3245c16aa.setIcon(icon_e0d81fe5de65e13563de9c885d9cbaef);
+        
+    
+        var popup_9b5beee925bb70649f14ba4e2ee76eed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7941edea937dc34e19dad8fb7e4e5076 = $(`<div id="html_7941edea937dc34e19dad8fb7e4e5076" style="width: 100.0%; height: 100.0%;">Kazan<br>Tourists: 2.0 million<br>Category: City</div>`)[0];
+                popup_9b5beee925bb70649f14ba4e2ee76eed.setContent(html_7941edea937dc34e19dad8fb7e4e5076);
+            
+        
+
+        marker_5e347c539fed0c47929529f3245c16aa.bindPopup(popup_9b5beee925bb70649f14ba4e2ee76eed)
+        ;
+
+        
+    
+    
+            var marker_5758084d939867bc9656431e5a0fba7d = L.marker(
+                [43.565133, 131.885929],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_ddbccf2e612f4bb3964acb4cb585e814 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5758084d939867bc9656431e5a0fba7d.setIcon(icon_ddbccf2e612f4bb3964acb4cb585e814);
+        
+    
+        var popup_dc9017e2fde9dcefad1c7c0fb0087cfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddd96b801aef5f9eebd4d4d8710cb1d1 = $(`<div id="html_ddd96b801aef5f9eebd4d4d8710cb1d1" style="width: 100.0%; height: 100.0%;">Vladivostok<br>Tourists: 1.0 million<br>Category: City</div>`)[0];
+                popup_dc9017e2fde9dcefad1c7c0fb0087cfc.setContent(html_ddd96b801aef5f9eebd4d4d8710cb1d1);
+            
+        
+
+        marker_5758084d939867bc9656431e5a0fba7d.bindPopup(popup_dc9017e2fde9dcefad1c7c0fb0087cfc)
+        ;
+
+        
+    
+    
+            var marker_77720a11dd92e7ec40d45f6226436989 = L.marker(
+                [53.151074, 105.257548],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_4bf43727f4f470b2e13f7d151f964b47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_77720a11dd92e7ec40d45f6226436989.setIcon(icon_4bf43727f4f470b2e13f7d151f964b47);
+        
+    
+        var popup_e128d44c55cb4d6c5d67a8d43c09e78e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba84fe77b811a06082be1c1275dcffb5 = $(`<div id="html_ba84fe77b811a06082be1c1275dcffb5" style="width: 100.0%; height: 100.0%;">Lake Baikal<br>Tourists: 2.5 million<br>Category: Lake</div>`)[0];
+                popup_e128d44c55cb4d6c5d67a8d43c09e78e.setContent(html_ba84fe77b811a06082be1c1275dcffb5);
+            
+        
+
+        marker_77720a11dd92e7ec40d45f6226436989.bindPopup(popup_e128d44c55cb4d6c5d67a8d43c09e78e)
+        ;
+
+        
+    
+    
+            var marker_be1c695b0121ee96e047ae34946033b6 = L.marker(
+                [56.021562, 158.624312],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_aceaf66e14ec99e76c0d7307a6428ce8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_be1c695b0121ee96e047ae34946033b6.setIcon(icon_aceaf66e14ec99e76c0d7307a6428ce8);
+        
+    
+        var popup_5c083d3cd0fd378a7bac31d050537416 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc5c274da59fd5ba4f4b700870baa8f5 = $(`<div id="html_cc5c274da59fd5ba4f4b700870baa8f5" style="width: 100.0%; height: 100.0%;">Kamchatka Peninsula<br>Tourists: 1.0 million<br>Category: Peninsula</div>`)[0];
+                popup_5c083d3cd0fd378a7bac31d050537416.setContent(html_cc5c274da59fd5ba4f4b700870baa8f5);
+            
+        
+
+        marker_be1c695b0121ee96e047ae34946033b6.bindPopup(popup_5c083d3cd0fd378a7bac31d050537416)
+        ;
+
+        
+    
+    
+            var marker_0bb92cd8385f677e636ef5350a7e663d = L.marker(
+                [55.755796, 37.617315],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_05439686ecd8b0da123df5af90a626ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0bb92cd8385f677e636ef5350a7e663d.setIcon(icon_05439686ecd8b0da123df5af90a626ce);
+        
+    
+        var popup_6008fcb273b2cc0461270de9f934860e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2edbfa2170921f03658e8111bf21f586 = $(`<div id="html_2edbfa2170921f03658e8111bf21f586" style="width: 100.0%; height: 100.0%;">St. Basil's Cathedral<br>Tourists: 2.0 million<br>Category: Church</div>`)[0];
+                popup_6008fcb273b2cc0461270de9f934860e.setContent(html_2edbfa2170921f03658e8111bf21f586);
+            
+        
+
+        marker_0bb92cd8385f677e636ef5350a7e663d.bindPopup(popup_6008fcb273b2cc0461270de9f934860e)
+        ;
+
+        
+    
+    
+            var marker_363fad58e51e6f5542a352d4e85646b7 = L.marker(
+                [37.979452, 23.716217],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_e119c8353ebd568da1768e0ea8c5860f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_363fad58e51e6f5542a352d4e85646b7.setIcon(icon_e119c8353ebd568da1768e0ea8c5860f);
+        
+    
+        var popup_7a1cb897869b67d20788be8efd12574d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44c409850fb93c2e3a244578e011e949 = $(`<div id="html_44c409850fb93c2e3a244578e011e949" style="width: 100.0%; height: 100.0%;">Athens<br>Tourists: 10.0 million<br>Category: City</div>`)[0];
+                popup_7a1cb897869b67d20788be8efd12574d.setContent(html_44c409850fb93c2e3a244578e011e949);
+            
+        
+
+        marker_363fad58e51e6f5542a352d4e85646b7.bindPopup(popup_7a1cb897869b67d20788be8efd12574d)
+        ;
+
+        
+    
+    
+            var marker_50bb7f5de774216328757eed2815a5b9 = L.marker(
+                [36.423967, 25.444106],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_ee81c72fcc3d9fd21610ec84d3db7c1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_50bb7f5de774216328757eed2815a5b9.setIcon(icon_ee81c72fcc3d9fd21610ec84d3db7c1a);
+        
+    
+        var popup_69d1b8caf235aba879efb76c1404dcca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2db89ee6c8cf879f0edb5d5f6ff57e78 = $(`<div id="html_2db89ee6c8cf879f0edb5d5f6ff57e78" style="width: 100.0%; height: 100.0%;">Santorini<br>Tourists: 2.0 million<br>Category: Island</div>`)[0];
+                popup_69d1b8caf235aba879efb76c1404dcca.setContent(html_2db89ee6c8cf879f0edb5d5f6ff57e78);
+            
+        
+
+        marker_50bb7f5de774216328757eed2815a5b9.bindPopup(popup_69d1b8caf235aba879efb76c1404dcca)
+        ;
+
+        
+    
+    
+            var marker_89d1e7fc83ff3f9b1451f60cfbe45619 = L.marker(
+                [37.426508, 25.278709],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_224004422f13fd35350cd24b69322527 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_89d1e7fc83ff3f9b1451f60cfbe45619.setIcon(icon_224004422f13fd35350cd24b69322527);
+        
+    
+        var popup_63a27b04227aea128feb2576c66e860c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3d6e2fb6ad798c166f2951f01b93064 = $(`<div id="html_b3d6e2fb6ad798c166f2951f01b93064" style="width: 100.0%; height: 100.0%;">Mykonos<br>Tourists: 2.0 million<br>Category: Island</div>`)[0];
+                popup_63a27b04227aea128feb2576c66e860c.setContent(html_b3d6e2fb6ad798c166f2951f01b93064);
+            
+        
+
+        marker_89d1e7fc83ff3f9b1451f60cfbe45619.bindPopup(popup_63a27b04227aea128feb2576c66e860c)
+        ;
+
+        
+    
+    
+            var marker_ed9548e286da38d71e28fd4cac6412ea = L.marker(
+                [35.243662, 25.047873],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_b66970419674ca2209dbddc5be3356a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ed9548e286da38d71e28fd4cac6412ea.setIcon(icon_b66970419674ca2209dbddc5be3356a6);
+        
+    
+        var popup_e69ba0971cd188f39405dc77ec809fca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_deec6bd439e63c7e112213faf19a4f52 = $(`<div id="html_deec6bd439e63c7e112213faf19a4f52" style="width: 100.0%; height: 100.0%;">Crete<br>Tourists: 3.0 million<br>Category: Island</div>`)[0];
+                popup_e69ba0971cd188f39405dc77ec809fca.setContent(html_deec6bd439e63c7e112213faf19a4f52);
+            
+        
+
+        marker_ed9548e286da38d71e28fd4cac6412ea.bindPopup(popup_e69ba0971cd188f39405dc77ec809fca)
+        ;
+
+        
+    
+    
+            var marker_ff326569460b13fc4e10346f61999213 = L.marker(
+                [36.441904, 28.188827],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_c8d19d284a7ebacb5138adc644d8f576 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ff326569460b13fc4e10346f61999213.setIcon(icon_c8d19d284a7ebacb5138adc644d8f576);
+        
+    
+        var popup_6b7114f59db942f1687bc8a474018658 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e9178c38ddf41457010d95db80f022e = $(`<div id="html_5e9178c38ddf41457010d95db80f022e" style="width: 100.0%; height: 100.0%;">Rhodes<br>Tourists: 2.0 million<br>Category: Island</div>`)[0];
+                popup_6b7114f59db942f1687bc8a474018658.setContent(html_5e9178c38ddf41457010d95db80f022e);
+            
+        
+
+        marker_ff326569460b13fc4e10346f61999213.bindPopup(popup_6b7114f59db942f1687bc8a474018658)
+        ;
+
+        
+    
+    
+            var marker_b2a883ca175eb287aa8b993cc8904d85 = L.marker(
+                [39.613728, 19.900073],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_545f8dd83adfc42ae58fb8fd62e25105 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b2a883ca175eb287aa8b993cc8904d85.setIcon(icon_545f8dd83adfc42ae58fb8fd62e25105);
+        
+    
+        var popup_2e2c0d6af36d6d90f78c864c7c56f4c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d13d542fab1e2c0a6b3f25b5fd23e4c6 = $(`<div id="html_d13d542fab1e2c0a6b3f25b5fd23e4c6" style="width: 100.0%; height: 100.0%;">Corfu<br>Tourists: 1.5 million<br>Category: Island</div>`)[0];
+                popup_2e2c0d6af36d6d90f78c864c7c56f4c5.setContent(html_d13d542fab1e2c0a6b3f25b5fd23e4c6);
+            
+        
+
+        marker_b2a883ca175eb287aa8b993cc8904d85.bindPopup(popup_2e2c0d6af36d6d90f78c864c7c56f4c5)
+        ;
+
+        
+    
+    
+            var marker_1252adae963c8d0208912782e89b853a = L.marker(
+                [39.729444, 21.424722],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_fedf9114b4fa8843a572f87ecb895227 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1252adae963c8d0208912782e89b853a.setIcon(icon_fedf9114b4fa8843a572f87ecb895227);
+        
+    
+        var popup_084a80123ff1309b7333b97d144b8a2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12d53bbb0a915620ba0fd5630d01e926 = $(`<div id="html_12d53bbb0a915620ba0fd5630d01e926" style="width: 100.0%; height: 100.0%;">Meteora<br>Tourists: 1.0 million<br>Category: Monastery Complex</div>`)[0];
+                popup_084a80123ff1309b7333b97d144b8a2b.setContent(html_12d53bbb0a915620ba0fd5630d01e926);
+            
+        
+
+        marker_1252adae963c8d0208912782e89b853a.bindPopup(popup_084a80123ff1309b7333b97d144b8a2b)
+        ;
+
+        
+    
+    
+            var marker_6ea506d595c1b35b1e22e8110767e1e3 = L.marker(
+                [38.475111, 22.217778],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_c0aad9cca647b3fb60dace7b462c006a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6ea506d595c1b35b1e22e8110767e1e3.setIcon(icon_c0aad9cca647b3fb60dace7b462c006a);
+        
+    
+        var popup_76100ef18788aced306a6b60b32b6658 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7e756a2126ff5dc667f0e8a0e2b9b24 = $(`<div id="html_e7e756a2126ff5dc667f0e8a0e2b9b24" style="width: 100.0%; height: 100.0%;">Delphi<br>Tourists: 1.0 million<br>Category: Archaeological Site</div>`)[0];
+                popup_76100ef18788aced306a6b60b32b6658.setContent(html_e7e756a2126ff5dc667f0e8a0e2b9b24);
+            
+        
+
+        marker_6ea506d595c1b35b1e22e8110767e1e3.bindPopup(popup_76100ef18788aced306a6b60b32b6658)
+        ;
+
+        
+    
+    
+            var marker_c901d56f73fb9a9d13060a4d0f83beb1 = L.marker(
+                [38.710825, -9.136136],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_7e63e76781bf7d63a4e9907d47164ab4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c901d56f73fb9a9d13060a4d0f83beb1.setIcon(icon_7e63e76781bf7d63a4e9907d47164ab4);
+        
+    
+        var popup_9c23eae3bc337dabdc7255da9969308b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6adffa13df55fb8ccf2ab71fdbdb4fa5 = $(`<div id="html_6adffa13df55fb8ccf2ab71fdbdb4fa5" style="width: 100.0%; height: 100.0%;">Lisbon<br>Tourists: 3.5 million<br>Category: City</div>`)[0];
+                popup_9c23eae3bc337dabdc7255da9969308b.setContent(html_6adffa13df55fb8ccf2ab71fdbdb4fa5);
+            
+        
+
+        marker_c901d56f73fb9a9d13060a4d0f83beb1.bindPopup(popup_9c23eae3bc337dabdc7255da9969308b)
+        ;
+
+        
+    
+    
+            var marker_6772decb4cc2d78cae3ba92bab49852f = L.marker(
+                [41.149631, -8.610975],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_721bff082e6383c31a99565fe82ed456 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6772decb4cc2d78cae3ba92bab49852f.setIcon(icon_721bff082e6383c31a99565fe82ed456);
+        
+    
+        var popup_1c7595e1db287594ca83345506fbefc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6df89baf03b037cf37d42ccda105a50 = $(`<div id="html_f6df89baf03b037cf37d42ccda105a50" style="width: 100.0%; height: 100.0%;">Porto<br>Tourists: 2.5 million<br>Category: City</div>`)[0];
+                popup_1c7595e1db287594ca83345506fbefc5.setContent(html_f6df89baf03b037cf37d42ccda105a50);
+            
+        
+
+        marker_6772decb4cc2d78cae3ba92bab49852f.bindPopup(popup_1c7595e1db287594ca83345506fbefc5)
+        ;
+
+        
+    
+    
+            var marker_466d7d552777fd77c28432852c9c9756 = L.marker(
+                [37.044335, -7.774026],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_f4101d08f684e3f0567c333068b07402 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_466d7d552777fd77c28432852c9c9756.setIcon(icon_f4101d08f684e3f0567c333068b07402);
+        
+    
+        var popup_d5530db7ec75c67dbb20aa7ad64828d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ffca8033e8de2657071e3e519d6c542 = $(`<div id="html_2ffca8033e8de2657071e3e519d6c542" style="width: 100.0%; height: 100.0%;">Algarve<br>Tourists: 3.0 million<br>Category: Region</div>`)[0];
+                popup_d5530db7ec75c67dbb20aa7ad64828d7.setContent(html_2ffca8033e8de2657071e3e519d6c542);
+            
+        
+
+        marker_466d7d552777fd77c28432852c9c9756.bindPopup(popup_d5530db7ec75c67dbb20aa7ad64828d7)
+        ;
+
+        
+    
+    
+            var marker_d25011760b972acaad9d2feebd0a8040 = L.marker(
+                [32.652843, -16.976997],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_5a182618ec101017de97ed26dd127fd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d25011760b972acaad9d2feebd0a8040.setIcon(icon_5a182618ec101017de97ed26dd127fd7);
+        
+    
+        var popup_22212abe74da216d6dc812245e43eb20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad43b4c77c0133c41445d2845728389a = $(`<div id="html_ad43b4c77c0133c41445d2845728389a" style="width: 100.0%; height: 100.0%;">Madeira<br>Tourists: 1.0 million<br>Category: Island</div>`)[0];
+                popup_22212abe74da216d6dc812245e43eb20.setContent(html_ad43b4c77c0133c41445d2845728389a);
+            
+        
+
+        marker_d25011760b972acaad9d2feebd0a8040.bindPopup(popup_22212abe74da216d6dc812245e43eb20)
+        ;
+
+        
+    
+    
+            var marker_134c5a379fcdd1733806688d6406aff4 = L.marker(
+                [38.730825, -9.360576],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_40d5f74fda4cd609239a12cc8829dd02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_134c5a379fcdd1733806688d6406aff4.setIcon(icon_40d5f74fda4cd609239a12cc8829dd02);
+        
+    
+        var popup_f4c82915bc37cc903f3597e3ce9f780c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_439f0325c1be0cc8b11daeb06752a164 = $(`<div id="html_439f0325c1be0cc8b11daeb06752a164" style="width: 100.0%; height: 100.0%;">Sintra<br>Tourists: 1.0 million<br>Category: Town</div>`)[0];
+                popup_f4c82915bc37cc903f3597e3ce9f780c.setContent(html_439f0325c1be0cc8b11daeb06752a164);
+            
+        
+
+        marker_134c5a379fcdd1733806688d6406aff4.bindPopup(popup_f4c82915bc37cc903f3597e3ce9f780c)
+        ;
+
+        
+    
+    
+            var marker_5b57f7b0aa35c6163142044ae5618d28 = L.marker(
+                [59.913868, 10.751964],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_45a0016991ceef79202f769dc7252b70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5b57f7b0aa35c6163142044ae5618d28.setIcon(icon_45a0016991ceef79202f769dc7252b70);
+        
+    
+        var popup_5923bb5da7832b8ce359045b196d51a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e7cf93933811208be62a819cf044c41 = $(`<div id="html_4e7cf93933811208be62a819cf044c41" style="width: 100.0%; height: 100.0%;">Oslo<br>Tourists: 2.5 million<br>Category: City</div>`)[0];
+                popup_5923bb5da7832b8ce359045b196d51a7.setContent(html_4e7cf93933811208be62a819cf044c41);
+            
+        
+
+        marker_5b57f7b0aa35c6163142044ae5618d28.bindPopup(popup_5923bb5da7832b8ce359045b196d51a7)
+        ;
+
+        
+    
+    
+            var marker_2a90b02dc9c62a8ef2305dfee7fa44d1 = L.marker(
+                [60.395186, 5.324015],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_2089b114133128d994041590c9d872e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2a90b02dc9c62a8ef2305dfee7fa44d1.setIcon(icon_2089b114133128d994041590c9d872e6);
+        
+    
+        var popup_e5274e9565ab303b37927e43bd6f13a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc77ff772c91b14831e057cbceab570d = $(`<div id="html_bc77ff772c91b14831e057cbceab570d" style="width: 100.0%; height: 100.0%;">Bergen<br>Tourists: 1.5 million<br>Category: City</div>`)[0];
+                popup_e5274e9565ab303b37927e43bd6f13a9.setContent(html_bc77ff772c91b14831e057cbceab570d);
+            
+        
+
+        marker_2a90b02dc9c62a8ef2305dfee7fa44d1.bindPopup(popup_e5274e9565ab303b37927e43bd6f13a9)
+        ;
+
+        
+    
+    
+            var marker_a53d6e09277b38ae14fc88e4e8677cee = L.marker(
+                [61.006944, 7.025278],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_c3ad0103f95f08aedf0ade7e3fc5d929 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a53d6e09277b38ae14fc88e4e8677cee.setIcon(icon_c3ad0103f95f08aedf0ade7e3fc5d929);
+        
+    
+        var popup_894e84c09663c191fa33536946f80f37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_edeb0ce195774b72788390aea56604d7 = $(`<div id="html_edeb0ce195774b72788390aea56604d7" style="width: 100.0%; height: 100.0%;">Sognefjord<br>Tourists: 1.0 million<br>Category: Fjord</div>`)[0];
+                popup_894e84c09663c191fa33536946f80f37.setContent(html_edeb0ce195774b72788390aea56604d7);
+            
+        
+
+        marker_a53d6e09277b38ae14fc88e4e8677cee.bindPopup(popup_894e84c09663c191fa33536946f80f37)
+        ;
+
+        
+    
+    
+            var marker_4ec12ddf686747b4065006ed370d23c8 = L.marker(
+                [59.329302, 18.068581],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_303727da4e726a81ef7ffd1b0d6cccd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4ec12ddf686747b4065006ed370d23c8.setIcon(icon_303727da4e726a81ef7ffd1b0d6cccd7);
+        
+    
+        var popup_1327ab23d5b53ac19768e83a4e638d15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8c70f7d050f2d0edd129443b904929d = $(`<div id="html_b8c70f7d050f2d0edd129443b904929d" style="width: 100.0%; height: 100.0%;">Stockholm<br>Tourists: 2.5 million<br>Category: City</div>`)[0];
+                popup_1327ab23d5b53ac19768e83a4e638d15.setContent(html_b8c70f7d050f2d0edd129443b904929d);
+            
+        
+
+        marker_4ec12ddf686747b4065006ed370d23c8.bindPopup(popup_1327ab23d5b53ac19768e83a4e638d15)
+        ;
+
+        
+    
+    
+            var marker_2b2fef32385e7af38dd84f75031fc5a0 = L.marker(
+                [57.708863, 11.973339],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_a37cb705e2c175490e673803fac9c5f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2b2fef32385e7af38dd84f75031fc5a0.setIcon(icon_a37cb705e2c175490e673803fac9c5f5);
+        
+    
+        var popup_227a2e45fdefbd0bba918d0243622780 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e324ef39a8481d552e8f4a885ee21462 = $(`<div id="html_e324ef39a8481d552e8f4a885ee21462" style="width: 100.0%; height: 100.0%;">Gothenburg<br>Tourists: 1.5 million<br>Category: City</div>`)[0];
+                popup_227a2e45fdefbd0bba918d0243622780.setContent(html_e324ef39a8481d552e8f4a885ee21462);
+            
+        
+
+        marker_2b2fef32385e7af38dd84f75031fc5a0.bindPopup(popup_227a2e45fdefbd0bba918d0243622780)
+        ;
+
+        
+    
+    
+            var marker_8e32926796bcabafd8454b263f860016 = L.marker(
+                [55.609934, 13.007758],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_0e0037768873dcc75f3759419180009b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8e32926796bcabafd8454b263f860016.setIcon(icon_0e0037768873dcc75f3759419180009b);
+        
+    
+        var popup_1b15120908da7b43b8655fbaf731f355 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c3de8855a23683e17b8cb0590242357 = $(`<div id="html_3c3de8855a23683e17b8cb0590242357" style="width: 100.0%; height: 100.0%;">Malm<br>Tourists: 1.0 million<br>Category: City</div>`)[0];
+                popup_1b15120908da7b43b8655fbaf731f355.setContent(html_3c3de8855a23683e17b8cb0590242357);
+            
+        
+
+        marker_8e32926796bcabafd8454b263f860016.bindPopup(popup_1b15120908da7b43b8655fbaf731f355)
+        ;
+
+        
+    
+    
+            var marker_2bdf959c0206d6b838e2887efaf503cc = L.marker(
+                [59.329302, 18.068581],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_66f8334ab12820ff082907db5de08efe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2bdf959c0206d6b838e2887efaf503cc.setIcon(icon_66f8334ab12820ff082907db5de08efe);
+        
+    
+        var popup_871bb49f8d0cd2f2ec8bf467d011e422 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0cfe869a9d3750a1ec30d880b13e8af4 = $(`<div id="html_0cfe869a9d3750a1ec30d880b13e8af4" style="width: 100.0%; height: 100.0%;">Vasa Museum<br>Tourists: 1.0 million<br>Category: Museum</div>`)[0];
+                popup_871bb49f8d0cd2f2ec8bf467d011e422.setContent(html_0cfe869a9d3750a1ec30d880b13e8af4);
+            
+        
+
+        marker_2bdf959c0206d6b838e2887efaf503cc.bindPopup(popup_871bb49f8d0cd2f2ec8bf467d011e422)
+        ;
+
+        
+    
+    
+            var marker_844848b1eaacb8c8fb657ffe3e1000a6 = L.marker(
+                [47.376881, 8.541694],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_bcbd2e5446bdfeb595071a7aa7795332 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_844848b1eaacb8c8fb657ffe3e1000a6.setIcon(icon_bcbd2e5446bdfeb595071a7aa7795332);
+        
+    
+        var popup_9e79a174bfeafa6d19b9a2706f5e1bd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c045a04986adb3c49f6a994cfae5b486 = $(`<div id="html_c045a04986adb3c49f6a994cfae5b486" style="width: 100.0%; height: 100.0%;">Zurich<br>Tourists: 3.0 million<br>Category: City</div>`)[0];
+                popup_9e79a174bfeafa6d19b9a2706f5e1bd8.setContent(html_c045a04986adb3c49f6a994cfae5b486);
+            
+        
+
+        marker_844848b1eaacb8c8fb657ffe3e1000a6.bindPopup(popup_9e79a174bfeafa6d19b9a2706f5e1bd8)
+        ;
+
+        
+    
+    
+            var marker_15fb2e977b9da8b5316d13f9adb9901c = L.marker(
+                [46.204391, 6.147435],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_38ddac09a8c0927fae259965b1279345 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_15fb2e977b9da8b5316d13f9adb9901c.setIcon(icon_38ddac09a8c0927fae259965b1279345);
+        
+    
+        var popup_5a3eb158b6d01ce2306410b7ad046e88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33a8016c0f991b3414ac8cea452decc1 = $(`<div id="html_33a8016c0f991b3414ac8cea452decc1" style="width: 100.0%; height: 100.0%;">Geneva<br>Tourists: 2.0 million<br>Category: City</div>`)[0];
+                popup_5a3eb158b6d01ce2306410b7ad046e88.setContent(html_33a8016c0f991b3414ac8cea452decc1);
+            
+        
+
+        marker_15fb2e977b9da8b5316d13f9adb9901c.bindPopup(popup_5a3eb158b6d01ce2306410b7ad046e88)
+        ;
+
+        
+    
+    
+            var marker_9ae800edea414646e8a41ad950d36faf = L.marker(
+                [47.051389, 8.306944],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_b9f2ad4add8d6f8a66fc7715d03372cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ae800edea414646e8a41ad950d36faf.setIcon(icon_b9f2ad4add8d6f8a66fc7715d03372cc);
+        
+    
+        var popup_83bf01fed1bc8164e5f2c03a27dba045 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_338c62f7800fe448eff484c755c8331b = $(`<div id="html_338c62f7800fe448eff484c755c8331b" style="width: 100.0%; height: 100.0%;">Lucerne<br>Tourists: 1.5 million<br>Category: City</div>`)[0];
+                popup_83bf01fed1bc8164e5f2c03a27dba045.setContent(html_338c62f7800fe448eff484c755c8331b);
+            
+        
+
+        marker_9ae800edea414646e8a41ad950d36faf.bindPopup(popup_83bf01fed1bc8164e5f2c03a27dba045)
+        ;
+
+        
+    
+    
+            var marker_d001bdd44e02075afd9eabaf667ee02d = L.marker(
+                [46.680278, 7.855833],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_f63eb6ff258361fae34ea8dcd38acce2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d001bdd44e02075afd9eabaf667ee02d.setIcon(icon_f63eb6ff258361fae34ea8dcd38acce2);
+        
+    
+        var popup_0ee6597cb73f009f2e6a6303950385be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e380002f02c5e5bc18abb6ee7286b42d = $(`<div id="html_e380002f02c5e5bc18abb6ee7286b42d" style="width: 100.0%; height: 100.0%;">Interlaken<br>Tourists: 1.0 million<br>Category: Town</div>`)[0];
+                popup_0ee6597cb73f009f2e6a6303950385be.setContent(html_e380002f02c5e5bc18abb6ee7286b42d);
+            
+        
+
+        marker_d001bdd44e02075afd9eabaf667ee02d.bindPopup(popup_0ee6597cb73f009f2e6a6303950385be)
+        ;
+
+        
+    
+    
+            var marker_c6008a1c15504ac0274a216654707b8f = L.marker(
+                [47.567778, 8.675556],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_af015059e56d92296c2e116d50a0d2b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c6008a1c15504ac0274a216654707b8f.setIcon(icon_af015059e56d92296c2e116d50a0d2b2);
+        
+    
+        var popup_234cf8b2dd73d4d0bf81e120d93b520c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9dfde8ee1eb1ac9472a352e492c5efa1 = $(`<div id="html_9dfde8ee1eb1ac9472a352e492c5efa1" style="width: 100.0%; height: 100.0%;">Rhine Falls<br>Tourists: 1.0 million<br>Category: Waterfall</div>`)[0];
+                popup_234cf8b2dd73d4d0bf81e120d93b520c.setContent(html_9dfde8ee1eb1ac9472a352e492c5efa1);
+            
+        
+
+        marker_c6008a1c15504ac0274a216654707b8f.bindPopup(popup_234cf8b2dd73d4d0bf81e120d93b520c)
+        ;
+
+        
+    
+    
+            var marker_f211e4eb7778ff7d65ab119752c0716b = L.marker(
+                [41.008238, 28.978359],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_7c06751a02b2d73e63cd562fdefb0f17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f211e4eb7778ff7d65ab119752c0716b.setIcon(icon_7c06751a02b2d73e63cd562fdefb0f17);
+        
+    
+        var popup_a9428f7ded67fab56f1e3a24f93cfc2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f460fd0c14191496ef55f8d987c88302 = $(`<div id="html_f460fd0c14191496ef55f8d987c88302" style="width: 100.0%; height: 100.0%;">Istanbul<br>Tourists: 15.0 million<br>Category: City</div>`)[0];
+                popup_a9428f7ded67fab56f1e3a24f93cfc2f.setContent(html_f460fd0c14191496ef55f8d987c88302);
+            
+        
+
+        marker_f211e4eb7778ff7d65ab119752c0716b.bindPopup(popup_a9428f7ded67fab56f1e3a24f93cfc2f)
+        ;
+
+        
+    
+    
+            var marker_8f005d9c5b3bb7999e3f56ef6cab3648 = L.marker(
+                [36.522512, 30.703761],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_24933cf8650b7e4d7d3fb3662892b29e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8f005d9c5b3bb7999e3f56ef6cab3648.setIcon(icon_24933cf8650b7e4d7d3fb3662892b29e);
+        
+    
+        var popup_cc6445892965843656dc3dbc97362845 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_981637726c8c6beb002f31a2844c9dac = $(`<div id="html_981637726c8c6beb002f31a2844c9dac" style="width: 100.0%; height: 100.0%;">Antalya<br>Tourists: 10.0 million<br>Category: City</div>`)[0];
+                popup_cc6445892965843656dc3dbc97362845.setContent(html_981637726c8c6beb002f31a2844c9dac);
+            
+        
+
+        marker_8f005d9c5b3bb7999e3f56ef6cab3648.bindPopup(popup_cc6445892965843656dc3dbc97362845)
+        ;
+
+        
+    
+    
+            var marker_f40b7d6d41a34b8f18a4fc954cd79099 = L.marker(
+                [38.711845, 35.156845],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_9cf867149d27b036fd1ab49165216808 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f40b7d6d41a34b8f18a4fc954cd79099.setIcon(icon_9cf867149d27b036fd1ab49165216808);
+        
+    
+        var popup_662277ced3743202cf5e196388bb7860 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a40fc4a5430fcc1c2150a42c8ac4ad9 = $(`<div id="html_6a40fc4a5430fcc1c2150a42c8ac4ad9" style="width: 100.0%; height: 100.0%;">Cappadocia<br>Tourists: 2.0 million<br>Category: Region</div>`)[0];
+                popup_662277ced3743202cf5e196388bb7860.setContent(html_6a40fc4a5430fcc1c2150a42c8ac4ad9);
+            
+        
+
+        marker_f40b7d6d41a34b8f18a4fc954cd79099.bindPopup(popup_662277ced3743202cf5e196388bb7860)
+        ;
+
+        
+    
+    
+            var marker_1aab7f2cffe23ab9478fc96d19de94d4 = L.marker(
+                [37.742778, 27.391667],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_b6de24dc3f20a21d0f90c62c4e2c4ff4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1aab7f2cffe23ab9478fc96d19de94d4.setIcon(icon_b6de24dc3f20a21d0f90c62c4e2c4ff4);
+        
+    
+        var popup_f5b57d6b135873a2bcfe1fb7346b3881 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abdf99bced38bb29fe499be45e0f6d70 = $(`<div id="html_abdf99bced38bb29fe499be45e0f6d70" style="width: 100.0%; height: 100.0%;">Ephesus<br>Tourists: 1.5 million<br>Category: Archaeological Site</div>`)[0];
+                popup_f5b57d6b135873a2bcfe1fb7346b3881.setContent(html_abdf99bced38bb29fe499be45e0f6d70);
+            
+        
+
+        marker_1aab7f2cffe23ab9478fc96d19de94d4.bindPopup(popup_f5b57d6b135873a2bcfe1fb7346b3881)
+        ;
+
+        
+    
+    
+            var marker_0d21d59ea46b71bf0e8ea663d663f100 = L.marker(
+                [37.779722, 29.0825],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_1f7bcc4376bcf8c97b4f92c0df3c444d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0d21d59ea46b71bf0e8ea663d663f100.setIcon(icon_1f7bcc4376bcf8c97b4f92c0df3c444d);
+        
+    
+        var popup_476a2996c4570e5c2f4f31b1556ddc89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e100e9a1af07a8e6cbe597adc86e693 = $(`<div id="html_2e100e9a1af07a8e6cbe597adc86e693" style="width: 100.0%; height: 100.0%;">Pamukkale<br>Tourists: 1.0 million<br>Category: Natural Site</div>`)[0];
+                popup_476a2996c4570e5c2f4f31b1556ddc89.setContent(html_2e100e9a1af07a8e6cbe597adc86e693);
+            
+        
+
+        marker_0d21d59ea46b71bf0e8ea663d663f100.bindPopup(popup_476a2996c4570e5c2f4f31b1556ddc89)
+        ;
+
+        
+    
+    
+            var marker_13aae641e563103f156de349da850304 = L.marker(
+                [37.134596, 27.384188],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_2820e607a63bd8c289a2f5e9600c574b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_13aae641e563103f156de349da850304.setIcon(icon_2820e607a63bd8c289a2f5e9600c574b);
+        
+    
+        var popup_e4b1bab4b344522b6409d7a5534d0c61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee81568d92620e0cdf933ddd2cf05be6 = $(`<div id="html_ee81568d92620e0cdf933ddd2cf05be6" style="width: 100.0%; height: 100.0%;">Bodrum<br>Tourists: 1.0 million<br>Category: Town</div>`)[0];
+                popup_e4b1bab4b344522b6409d7a5534d0c61.setContent(html_ee81568d92620e0cdf933ddd2cf05be6);
+            
+        
+
+        marker_13aae641e563103f156de349da850304.bindPopup(popup_e4b1bab4b344522b6409d7a5534d0c61)
+        ;
+
+        
+    
+    
+            var marker_e0fb784962ad46607e994a72844b542d = L.marker(
+                [41.008238, 28.978359],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_677970bc8a523dfff8b21ae4771cec0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e0fb784962ad46607e994a72844b542d.setIcon(icon_677970bc8a523dfff8b21ae4771cec0e);
+        
+    
+        var popup_5e50c1844b9166ef60cd2ef072852b8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a4bf0158f3c6e5401f4f17abbec51bb = $(`<div id="html_5a4bf0158f3c6e5401f4f17abbec51bb" style="width: 100.0%; height: 100.0%;">Istanbul Grand Bazaar<br>Tourists: 10.0 million<br>Category: Bazaar</div>`)[0];
+                popup_5e50c1844b9166ef60cd2ef072852b8c.setContent(html_5a4bf0158f3c6e5401f4f17abbec51bb);
+            
+        
+
+        marker_e0fb784962ad46607e994a72844b542d.bindPopup(popup_5e50c1844b9166ef60cd2ef072852b8c)
+        ;
+
+        
+    
+    
+            var marker_3c5a5b4ad5d8ce79df8ab8433f8dc038 = L.marker(
+                [41.008238, 28.978359],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_082cade852acb6e935825085385e29be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3c5a5b4ad5d8ce79df8ab8433f8dc038.setIcon(icon_082cade852acb6e935825085385e29be);
+        
+    
+        var popup_4bb7044f2021588eafb53b65ad049fa1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14ad3f90a1c0789451c48ac9089f8dbb = $(`<div id="html_14ad3f90a1c0789451c48ac9089f8dbb" style="width: 100.0%; height: 100.0%;">Topkapi Palace<br>Tourists: 5.0 million<br>Category: Palace</div>`)[0];
+                popup_4bb7044f2021588eafb53b65ad049fa1.setContent(html_14ad3f90a1c0789451c48ac9089f8dbb);
+            
+        
+
+        marker_3c5a5b4ad5d8ce79df8ab8433f8dc038.bindPopup(popup_4bb7044f2021588eafb53b65ad049fa1)
+        ;
+
+        
+    
+    
+            var marker_839e7c44a8408fa4ec5cfb07847be257 = L.marker(
+                [41.008238, 28.978359],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_3a04544a8a989f3cb6835939237dfcb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_839e7c44a8408fa4ec5cfb07847be257.setIcon(icon_3a04544a8a989f3cb6835939237dfcb0);
+        
+    
+        var popup_c39a5a1ab929388125441846080e805d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ecdeb27a4f989667010a0fe20a21170 = $(`<div id="html_8ecdeb27a4f989667010a0fe20a21170" style="width: 100.0%; height: 100.0%;">Blue Mosque<br>Tourists: 2.0 million<br>Category: Mosque</div>`)[0];
+                popup_c39a5a1ab929388125441846080e805d.setContent(html_8ecdeb27a4f989667010a0fe20a21170);
+            
+        
+
+        marker_839e7c44a8408fa4ec5cfb07847be257.bindPopup(popup_c39a5a1ab929388125441846080e805d)
+        ;
+
+        
+    
+    
+            var marker_ed9536e5314477f4f0fb4c2f271189cd = L.marker(
+                [50.45466, 30.523842],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_4b738fe119f12b0e62041cf21d8d75b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ed9536e5314477f4f0fb4c2f271189cd.setIcon(icon_4b738fe119f12b0e62041cf21d8d75b3);
+        
+    
+        var popup_72de5c6f2918e5bf5ae0778a9585e848 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_789f54826e674c6d27144a24fcccae6c = $(`<div id="html_789f54826e674c6d27144a24fcccae6c" style="width: 100.0%; height: 100.0%;">Kyiv<br>Tourists: 3.5 million<br>Category: City</div>`)[0];
+                popup_72de5c6f2918e5bf5ae0778a9585e848.setContent(html_789f54826e674c6d27144a24fcccae6c);
+            
+        
+
+        marker_ed9536e5314477f4f0fb4c2f271189cd.bindPopup(popup_72de5c6f2918e5bf5ae0778a9585e848)
+        ;
+
+        
+    
+    
+            var marker_7085f5c2e0b54cd3f18a428bab25edbe = L.marker(
+                [49.839973, 23.989223],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_357debb3da1805c3a1c23c611ef6fe89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7085f5c2e0b54cd3f18a428bab25edbe.setIcon(icon_357debb3da1805c3a1c23c611ef6fe89);
+        
+    
+        var popup_e6608cca34ee2434be1cdb3d9489df9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d723803067a0f79e88d2959b67449e3 = $(`<div id="html_8d723803067a0f79e88d2959b67449e3" style="width: 100.0%; height: 100.0%;">Lviv<br>Tourists: 2.0 million<br>Category: City</div>`)[0];
+                popup_e6608cca34ee2434be1cdb3d9489df9e.setContent(html_8d723803067a0f79e88d2959b67449e3);
+            
+        
+
+        marker_7085f5c2e0b54cd3f18a428bab25edbe.bindPopup(popup_e6608cca34ee2434be1cdb3d9489df9e)
+        ;
+
+        
+    
+    
+            var marker_bbd8ba59af0b8941b9f515f9e31d6fbd = L.marker(
+                [46.483333, 30.733333],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_206d31fb01f5921630ea56494b146b67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bbd8ba59af0b8941b9f515f9e31d6fbd.setIcon(icon_206d31fb01f5921630ea56494b146b67);
+        
+    
+        var popup_c32531ae43f65d5836e49c15a59e327f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_beadbe43f2a6c5fcf1bb7cebcd64b254 = $(`<div id="html_beadbe43f2a6c5fcf1bb7cebcd64b254" style="width: 100.0%; height: 100.0%;">Odessa<br>Tourists: 1.0 million<br>Category: City</div>`)[0];
+                popup_c32531ae43f65d5836e49c15a59e327f.setContent(html_beadbe43f2a6c5fcf1bb7cebcd64b254);
+            
+        
+
+        marker_bbd8ba59af0b8941b9f515f9e31d6fbd.bindPopup(popup_c32531ae43f65d5836e49c15a59e327f)
+        ;
+
+        
+    
+    
+            var marker_6371bff3c91ba4819f55858e7e02fa16 = L.marker(
+                [51.507351, -0.127758],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_1a05bf6094c9967c4868482bb6fc6e44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6371bff3c91ba4819f55858e7e02fa16.setIcon(icon_1a05bf6094c9967c4868482bb6fc6e44);
+        
+    
+        var popup_f3e27c15355c136b448edc03d348886b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da69cfe9b46687a130bb7f39279cae46 = $(`<div id="html_da69cfe9b46687a130bb7f39279cae46" style="width: 100.0%; height: 100.0%;">London<br>Tourists: 25.0 million<br>Category: City</div>`)[0];
+                popup_f3e27c15355c136b448edc03d348886b.setContent(html_da69cfe9b46687a130bb7f39279cae46);
+            
+        
+
+        marker_6371bff3c91ba4819f55858e7e02fa16.bindPopup(popup_f3e27c15355c136b448edc03d348886b)
+        ;
+
+        
+    
+    
+            var marker_1f005163cd96db5c304d4ee7a1b97007 = L.marker(
+                [55.953252, -3.188267],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_246d12a1c40187584c5ce8d2679f8d5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1f005163cd96db5c304d4ee7a1b97007.setIcon(icon_246d12a1c40187584c5ce8d2679f8d5f);
+        
+    
+        var popup_e6e3bb52d8f405881882c107b45fb903 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b04e2fd98aa2bb4a5a8add85bb91b637 = $(`<div id="html_b04e2fd98aa2bb4a5a8add85bb91b637" style="width: 100.0%; height: 100.0%;">Edinburgh<br>Tourists: 3.0 million<br>Category: City</div>`)[0];
+                popup_e6e3bb52d8f405881882c107b45fb903.setContent(html_b04e2fd98aa2bb4a5a8add85bb91b637);
+            
+        
+
+        marker_1f005163cd96db5c304d4ee7a1b97007.bindPopup(popup_e6e3bb52d8f405881882c107b45fb903)
+        ;
+
+        
+    
+    
+            var marker_190a4e4dbeb0dfd6fc89bdbb5f9e55d4 = L.marker(
+                [53.480958, -2.241509],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_a6e95badba9f5a7908438be346ed964d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_190a4e4dbeb0dfd6fc89bdbb5f9e55d4.setIcon(icon_a6e95badba9f5a7908438be346ed964d);
+        
+    
+        var popup_143141cc5595d17368635be28665e625 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e638a8910c8194b51db62adf10a4e82c = $(`<div id="html_e638a8910c8194b51db62adf10a4e82c" style="width: 100.0%; height: 100.0%;">Manchester<br>Tourists: 2.0 million<br>Category: City</div>`)[0];
+                popup_143141cc5595d17368635be28665e625.setContent(html_e638a8910c8194b51db62adf10a4e82c);
+            
+        
+
+        marker_190a4e4dbeb0dfd6fc89bdbb5f9e55d4.bindPopup(popup_143141cc5595d17368635be28665e625)
+        ;
+
+        
+    
+    
+            var marker_54cddfc71b00b9a97500af4545807e98 = L.marker(
+                [53.408371, -2.987576],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_46e8c3b9a3baeb8b86359ab4b0ad7d23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_54cddfc71b00b9a97500af4545807e98.setIcon(icon_46e8c3b9a3baeb8b86359ab4b0ad7d23);
+        
+    
+        var popup_59099a1b1fae6e0a2656c3ebfbba7230 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_692a7cb949efe7610f097d8fcd6d8c7a = $(`<div id="html_692a7cb949efe7610f097d8fcd6d8c7a" style="width: 100.0%; height: 100.0%;">Liverpool<br>Tourists: 1.5 million<br>Category: City</div>`)[0];
+                popup_59099a1b1fae6e0a2656c3ebfbba7230.setContent(html_692a7cb949efe7610f097d8fcd6d8c7a);
+            
+        
+
+        marker_54cddfc71b00b9a97500af4545807e98.bindPopup(popup_59099a1b1fae6e0a2656c3ebfbba7230)
+        ;
+
+        
+    
+    
+            var marker_453621ff9c725c5668763afeab7eafab = L.marker(
+                [52.204772, 0.120972],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_ffe14037ca5260ff8381da129aa46af6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_453621ff9c725c5668763afeab7eafab.setIcon(icon_ffe14037ca5260ff8381da129aa46af6);
+        
+    
+        var popup_f29ae8d139677c7765de5bb13cd531e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_892a25b210374ec60b66bc755407ab85 = $(`<div id="html_892a25b210374ec60b66bc755407ab85" style="width: 100.0%; height: 100.0%;">Cambridge<br>Tourists: 1.0 million<br>Category: City</div>`)[0];
+                popup_f29ae8d139677c7765de5bb13cd531e6.setContent(html_892a25b210374ec60b66bc755407ab85);
+            
+        
+
+        marker_453621ff9c725c5668763afeab7eafab.bindPopup(popup_f29ae8d139677c7765de5bb13cd531e6)
+        ;
+
+        
+    
+    
+            var marker_de16b8992a17d9cea765812740c5aa7d = L.marker(
+                [54.364158, -3.083333],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_df865ac6200db29a86f969ff7b56f64b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_de16b8992a17d9cea765812740c5aa7d.setIcon(icon_df865ac6200db29a86f969ff7b56f64b);
+        
+    
+        var popup_e465843961b14aaee5e81ffb751f8a2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d1851a790038d9da0f67d8edef1e966 = $(`<div id="html_0d1851a790038d9da0f67d8edef1e966" style="width: 100.0%; height: 100.0%;">Lake District<br>Tourists: 2.0 million<br>Category: National Park</div>`)[0];
+                popup_e465843961b14aaee5e81ffb751f8a2a.setContent(html_0d1851a790038d9da0f67d8edef1e966);
+            
+        
+
+        marker_de16b8992a17d9cea765812740c5aa7d.bindPopup(popup_e465843961b14aaee5e81ffb751f8a2a)
+        ;
+
+        
+    
+    
+            var marker_a82ee29c9b3d8f04af0b2160de4fe487 = L.marker(
+                [54.057778, -1.988889],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_34fe701f509966a94a00e66c0f2be2a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a82ee29c9b3d8f04af0b2160de4fe487.setIcon(icon_34fe701f509966a94a00e66c0f2be2a4);
+        
+    
+        var popup_45df1741b5df7a4e3d3f20886c61fcbb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5cd4bbd33819f32ae966a1ec666dd95 = $(`<div id="html_f5cd4bbd33819f32ae966a1ec666dd95" style="width: 100.0%; height: 100.0%;">Yorkshire Dales<br>Tourists: 1.0 million<br>Category: National Park</div>`)[0];
+                popup_45df1741b5df7a4e3d3f20886c61fcbb.setContent(html_f5cd4bbd33819f32ae966a1ec666dd95);
+            
+        
+
+        marker_a82ee29c9b3d8f04af0b2160de4fe487.bindPopup(popup_45df1741b5df7a4e3d3f20886c61fcbb)
+        ;
+
+        
+    
+    
+            var marker_f40ab4ccfe199c7ad9305e2a548aa204 = L.marker(
+                [51.793333, -1.875],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_1ee7fc30e8135278e5b567e7073efbb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f40ab4ccfe199c7ad9305e2a548aa204.setIcon(icon_1ee7fc30e8135278e5b567e7073efbb4);
+        
+    
+        var popup_b90c01c5152eb92190358391d44c8be7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e84245c379f9c034d7c408c770e7e9a8 = $(`<div id="html_e84245c379f9c034d7c408c770e7e9a8" style="width: 100.0%; height: 100.0%;">The Cotswolds<br>Tourists: 1.0 million<br>Category: Region</div>`)[0];
+                popup_b90c01c5152eb92190358391d44c8be7.setContent(html_e84245c379f9c034d7c408c770e7e9a8);
+            
+        
+
+        marker_f40ab4ccfe199c7ad9305e2a548aa204.bindPopup(popup_b90c01c5152eb92190358391d44c8be7)
+        ;
+
+        
+    
+    
+            var marker_ed7a7ee12b2b7c3c2eef2d2463fbb2d0 = L.marker(
+                [51.1775, -1.996167],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_238ff50dc2ada35aa14a7c33484b59da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ed7a7ee12b2b7c3c2eef2d2463fbb2d0.setIcon(icon_238ff50dc2ada35aa14a7c33484b59da);
+        
+    
+        var popup_bb837478f646c38fe5f0dbb7ba3b5212 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1af3d43444721295adaca623c9bb83c5 = $(`<div id="html_1af3d43444721295adaca623c9bb83c5" style="width: 100.0%; height: 100.0%;">Stonehenge<br>Tourists: 1.0 million<br>Category: Prehistoric Site</div>`)[0];
+                popup_bb837478f646c38fe5f0dbb7ba3b5212.setContent(html_1af3d43444721295adaca623c9bb83c5);
+            
+        
+
+        marker_ed7a7ee12b2b7c3c2eef2d2463fbb2d0.bindPopup(popup_bb837478f646c38fe5f0dbb7ba3b5212)
+        ;
+
+        
+    
+    
+            var marker_478868226b066cd6b368b9371578018a = L.marker(
+                [57.051528, -4.213333],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_65cac6f2aec7c3968f2051fe64c2c47b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_478868226b066cd6b368b9371578018a.setIcon(icon_65cac6f2aec7c3968f2051fe64c2c47b);
+        
+    
+        var popup_c7f0b84e3307ec9b55c6aa229c020238 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0484232127133f52df326c10bc738e19 = $(`<div id="html_0484232127133f52df326c10bc738e19" style="width: 100.0%; height: 100.0%;">Scottish Highlands<br>Tourists: 1.0 million<br>Category: Region</div>`)[0];
+                popup_c7f0b84e3307ec9b55c6aa229c020238.setContent(html_0484232127133f52df326c10bc738e19);
+            
+        
+
+        marker_478868226b066cd6b368b9371578018a.bindPopup(popup_c7f0b84e3307ec9b55c6aa229c020238)
+        ;
+
+        
+    
+    
+            var marker_03bca3f4d2921159d2e55e162bb89000 = L.marker(
+                [49.611668, 6.130237],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_784564f4bb4783dbdf1eec94db51230b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_03bca3f4d2921159d2e55e162bb89000.setIcon(icon_784564f4bb4783dbdf1eec94db51230b);
+        
+    
+        var popup_9b85017c72f0527d1513a36d188eca8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68d49d2d21b7a11345aaef450724204b = $(`<div id="html_68d49d2d21b7a11345aaef450724204b" style="width: 100.0%; height: 100.0%;">Luxembourg City<br>Tourists: 1.5 million<br>Category: City</div>`)[0];
+                popup_9b85017c72f0527d1513a36d188eca8f.setContent(html_68d49d2d21b7a11345aaef450724204b);
+            
+        
+
+        marker_03bca3f4d2921159d2e55e162bb89000.bindPopup(popup_9b85017c72f0527d1513a36d188eca8f)
+        ;
+
+        
+    
+    
+            var marker_5b904d331a3f96ab0e9b0a408625b01b = L.marker(
+                [35.897778, 14.5075],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_deb44084fe08a592754d78baf7845c57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5b904d331a3f96ab0e9b0a408625b01b.setIcon(icon_deb44084fe08a592754d78baf7845c57);
+        
+    
+        var popup_c2a9a1217299843e0bf03563c7bf84ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3ba688c7a26b36417fb782887028b73 = $(`<div id="html_e3ba688c7a26b36417fb782887028b73" style="width: 100.0%; height: 100.0%;">Valletta<br>Tourists: 1.5 million<br>Category: City</div>`)[0];
+                popup_c2a9a1217299843e0bf03563c7bf84ea.setContent(html_e3ba688c7a26b36417fb782887028b73);
+            
+        
+
+        marker_5b904d331a3f96ab0e9b0a408625b01b.bindPopup(popup_c2a9a1217299843e0bf03563c7bf84ea)
+        ;
+
+        
+    
+    
+            var marker_0585238602b15fc33043946b4865dbcf = L.marker(
+                [35.884167, 14.493889],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_fce7339397747c72755ddbeb67c9762d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0585238602b15fc33043946b4865dbcf.setIcon(icon_fce7339397747c72755ddbeb67c9762d);
+        
+    
+        var popup_091471be0027769dc2ca529990dc7271 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afdffac635afc8e39a740fc1b200d087 = $(`<div id="html_afdffac635afc8e39a740fc1b200d087" style="width: 100.0%; height: 100.0%;">Mdina<br>Tourists: 1.0 million<br>Category: City</div>`)[0];
+                popup_091471be0027769dc2ca529990dc7271.setContent(html_afdffac635afc8e39a740fc1b200d087);
+            
+        
+
+        marker_0585238602b15fc33043946b4865dbcf.bindPopup(popup_091471be0027769dc2ca529990dc7271)
+        ;
+
+        
+    
+    
+            var marker_c32cbe0f45efd2bd6999b832cba0efd2 = L.marker(
+                [36.042778, 14.300278],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_dfc4c4086a36488b6fd0b7134955a7dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c32cbe0f45efd2bd6999b832cba0efd2.setIcon(icon_dfc4c4086a36488b6fd0b7134955a7dc);
+        
+    
+        var popup_9bcca23d35f894ca00d14e536f56141e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbf82e80c7a8e535292544deae617c5e = $(`<div id="html_fbf82e80c7a8e535292544deae617c5e" style="width: 100.0%; height: 100.0%;">Blue Lagoon<br>Tourists: 1.0 million<br>Category: Beach</div>`)[0];
+                popup_9bcca23d35f894ca00d14e536f56141e.setContent(html_fbf82e80c7a8e535292544deae617c5e);
+            
+        
+
+        marker_c32cbe0f45efd2bd6999b832cba0efd2.bindPopup(popup_9bcca23d35f894ca00d14e536f56141e)
+        ;
+
+        
+    
+    
+            var marker_2a9a496ee694515ade60911f0c4c1f3f = L.marker(
+                [64.147778, -21.915556],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_b8b0cbae9f32d27299dbe919b3f0c4d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2a9a496ee694515ade60911f0c4c1f3f.setIcon(icon_b8b0cbae9f32d27299dbe919b3f0c4d5);
+        
+    
+        var popup_cdc936e05ca98b06192e65f05afe2c4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c0371fc4c56c254354b13616db800c5 = $(`<div id="html_6c0371fc4c56c254354b13616db800c5" style="width: 100.0%; height: 100.0%;">Reykjavik<br>Tourists: 2.5 million<br>Category: City</div>`)[0];
+                popup_cdc936e05ca98b06192e65f05afe2c4f.setContent(html_6c0371fc4c56c254354b13616db800c5);
+            
+        
+
+        marker_2a9a496ee694515ade60911f0c4c1f3f.bindPopup(popup_cdc936e05ca98b06192e65f05afe2c4f)
+        ;
+
+        
+    
+    
+            var marker_a3a110f7da0fa690f2a7fa9121703368 = L.marker(
+                [63.8925, -21.8639],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_367d5f1778736a39264424b1a7a62a69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a3a110f7da0fa690f2a7fa9121703368.setIcon(icon_367d5f1778736a39264424b1a7a62a69);
+        
+    
+        var popup_6ee22b7baf5c2a8aaf76a1fde778cf79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_533781ff1d227aa54b47e4f08ef7ad99 = $(`<div id="html_533781ff1d227aa54b47e4f08ef7ad99" style="width: 100.0%; height: 100.0%;">Blue Lagoon<br>Tourists: 1.0 million<br>Category: Geothermal Spa</div>`)[0];
+                popup_6ee22b7baf5c2a8aaf76a1fde778cf79.setContent(html_533781ff1d227aa54b47e4f08ef7ad99);
+            
+        
+
+        marker_a3a110f7da0fa690f2a7fa9121703368.bindPopup(popup_6ee22b7baf5c2a8aaf76a1fde778cf79)
+        ;
+
+        
+    
+    
+            var marker_e357212fa4c96affa6ab97577a1876de = L.marker(
+                [64.006944, -21.1325],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_45d8406373ff587581315696ac432314 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e357212fa4c96affa6ab97577a1876de.setIcon(icon_45d8406373ff587581315696ac432314);
+        
+    
+        var popup_e0f12260d7ff88115ec070a9ef49e0f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc071dadc2e173b0c972780625327a89 = $(`<div id="html_fc071dadc2e173b0c972780625327a89" style="width: 100.0%; height: 100.0%;">Golden Circle<br>Tourists: 1.0 million<br>Category: Region</div>`)[0];
+                popup_e0f12260d7ff88115ec070a9ef49e0f5.setContent(html_fc071dadc2e173b0c972780625327a89);
+            
+        
+
+        marker_e357212fa4c96affa6ab97577a1876de.bindPopup(popup_e0f12260d7ff88115ec070a9ef49e0f5)
+        ;
+
+        
+    
+    
+            var marker_a3ec6214f0489d18e18dfbe78e4a2608 = L.marker(
+                [44.816667, 20.448889],
+                {}
+            ).addTo(marker_cluster_5edb2633ce36d73bf86e300af125dc3c);
+        
+    
+            var icon_941bc4e113d50fb6b161b7f2c93ce769 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a3ec6214f0489d18e18dfbe78e4a2608.setIcon(icon_941bc4e113d50fb6b161b7f2c93ce769);
+        
+    
+        var popup_8ec6c86ca6fcb75700ad9c520b07853a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_001d10c607cc9f9e7cc0f3397fbf5fe8 = $(`<div id="html_001d10c607cc9f9e7cc0f3397fbf5fe8" style="width: 100.0%; height: 100.0%;">Belgrade<br>Tourists: 1.5 million<br>Category: City</div>`)[0];
+                popup_8ec6c86ca6fcb75700ad9c520b07853a.setContent(html_001d10c607cc9f9e7cc0f3397fbf5fe8);
+            
+        
+
+        marker_a3ec6214f0489d18e18dfbe78e4a2608.bindPopup(popup_8ec6c86ca6fcb75700ad9c520b07853a)
+        ;
+
+        
+    
+    
+            marker_cluster_5edb2633ce36d73bf86e300af125dc3c.addTo(map_bfbecf89f6655bd71b75cd922fdf3f53);
+        
+</script>
+</html>
